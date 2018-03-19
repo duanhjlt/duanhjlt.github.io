@@ -1,0 +1,479 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo搭建个人博客 | Starship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Alexander Duan">
+    
+
+    
+    <meta name="description" content="使用Hexo搭建个人博客的说明，可以在网上搜到一堆一堆的，这里只是记录个人搭建的过程，毕竟按照网上的说明，不是一气呵成就搭建好的，也算是踩了一些坑了。   1.Hexo介绍Hexo是一个简单、轻量、基于Node的一个静态博客框架。通过Hexo可以快速创建自己的博客，只需要几条命令就可以完成，非常的方便。   发布时，Hexo可以部署到自己的Node服务器上（我没有😄😄），也可以部署到githu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo搭建个人博客">
+<meta property="og:url" content="http://mattt.tk/2016/07/29/Hexo搭建个人博客/index.html">
+<meta property="og:site_name" content="Starship">
+<meta property="og:description" content="使用Hexo搭建个人博客的说明，可以在网上搜到一堆一堆的，这里只是记录个人搭建的过程，毕竟按照网上的说明，不是一气呵成就搭建好的，也算是踩了一些坑了。   1.Hexo介绍Hexo是一个简单、轻量、基于Node的一个静态博客框架。通过Hexo可以快速创建自己的博客，只需要几条命令就可以完成，非常的方便。   发布时，Hexo可以部署到自己的Node服务器上（我没有😄😄），也可以部署到githu">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://mattt.tk/images/20160730110501.jpeg">
+<meta property="og:image" content="http://mattt.tk/images/20160730110601.jpeg">
+<meta property="og:image" content="http://mattt.tk/images/20170408171301.jpeg">
+<meta property="og:image" content="http://mattt.tk/images/20170408171302.jpeg">
+<meta property="og:updated_time" content="2017-04-08T13:18:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo搭建个人博客">
+<meta name="twitter:description" content="使用Hexo搭建个人博客的说明，可以在网上搜到一堆一堆的，这里只是记录个人搭建的过程，毕竟按照网上的说明，不是一气呵成就搭建好的，也算是踩了一些坑了。   1.Hexo介绍Hexo是一个简单、轻量、基于Node的一个静态博客框架。通过Hexo可以快速创建自己的博客，只需要几条命令就可以完成，非常的方便。   发布时，Hexo可以部署到自己的Node服务器上（我没有😄😄），也可以部署到githu">
+<meta name="twitter:image" content="http://mattt.tk/images/20160730110501.jpeg">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Starship" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.png">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Starship">Starship</a></h1>
+				<h2 class="blog-motto">Alexander的技术博客</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:mattt.tk">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/07/29/Hexo搭建个人博客/" title="Hexo搭建个人博客" itemprop="url">Hexo搭建个人博客</a>
+  </h1>
+  
+  <p class="article-time">
+    <time datetime="2016-07-29T14:13:03.000Z" itemprop="datePublished"> 发表于 2016-07-29</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Hexo介绍"><span class="toc-number">1.</span> <span class="toc-text">1.Hexo介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装nvm"><span class="toc-number">2.</span> <span class="toc-text">2.安装nvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">3.安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Hexo安装"><span class="toc-number">4.</span> <span class="toc-text">2.Hexo安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主题"><span class="toc-number">4.1.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建文章"><span class="toc-number">4.2.</span> <span class="toc-text">新建文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deploy"><span class="toc-number">4.3.</span> <span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地预览"><span class="toc-number">4.4.</span> <span class="toc-text">本地预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-绑定域名"><span class="toc-number">5.</span> <span class="toc-text">4.绑定域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主域名绑定"><span class="toc-number">5.1.</span> <span class="toc-text">主域名绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#子域名绑定"><span class="toc-number">5.2.</span> <span class="toc-text">子域名绑定</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<p>使用Hexo搭建个人博客的说明，可以在网上搜到一堆一堆的，这里只是记录个人搭建的过程，毕竟按照网上的说明，不是一气呵成就搭建好的，也算是踩了一些坑了。  </p>
+<h2 id="1-Hexo介绍"><a href="#1-Hexo介绍" class="headerlink" title="1.Hexo介绍"></a>1.Hexo介绍</h2><p>Hexo是一个简单、轻量、基于Node的一个静态博客框架。通过Hexo可以快速创建自己的博客，只需要几条命令就可以完成，非常的方便。  </p>
+<p>发布时，Hexo可以部署到自己的Node服务器上（我没有😄😄），也可以部署到github上面（必须滴）。</p>
+<p>Hexo的官方网站：<a href="http://hexo.io" target="_blank" rel="noopener">http://hexo.io</a></p>
+<h2 id="2-安装nvm"><a href="#2-安装nvm" class="headerlink" title="2.安装nvm"></a>2.安装nvm</h2><p>使用的OS X, 各种基础配置都是齐全的，就不多说了。</p>
+<p>安装<strong>nvm</strong>（Node Version Manager）,在Terminal中运行  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh | sh</span><br></pre></td></tr></table></figure>
+<p>安装成功提示如下：<br><code>=&gt; Close and reopen your terminal to start using NVM</code><br>重启Terminal后nvm命令才会生效。  </p>
+<blockquote>
+<p>注意：  </p>
+<ol>
+<li>如果update失败的话，请检查~/.bash_profile是否存在，如果没有的话，新建一个文件，重新执行上面的命令  </li>
+<li>如果是zsh用户，写入到.bash_profile中是不生效的，要写入到.zshrc文件中,内容如下： </li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ -s &quot;/Users/duanhongjin/.nvm/nvm.sh&quot; ] &amp;&amp; . &quot;/Users/duanhongjin/.nvm/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装Node-js"><a href="#3-安装Node-js" class="headerlink" title="3.安装Node.js"></a>3.安装Node.js</h2><p>使用nvm安装node.js  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm install 0.10</span><br></pre></td></tr></table></figure>
+<h2 id="2-Hexo安装"><a href="#2-Hexo安装" class="headerlink" title="2.Hexo安装"></a>2.Hexo安装</h2><p>Hexo安装要用全局安装，加-g参数  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br><span class="line">$ hexo init ~/Documents/blog</span><br><span class="line">$ <span class="built_in">cd</span> ~/Documents/blog</span><br></pre></td></tr></table></figure>
+<p>安装之后看一下版本号  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version</span><br><span class="line">=&gt; hexo： 3.2.2</span><br></pre></td></tr></table></figure>
+<p>如果是Hexo2.6以后的版本还需要执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-renderer-ejs --save</span><br><span class="line">$ npm install hexo-renderer-stylus --save</span><br><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>我使用的jacman，准备修改一下，所以fork了一份 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/duanhjlt/jacman.git themes/jacman</span><br></pre></td></tr></table></figure>
+<p>在<em>_config.yml</em>配置文件中配置：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: jacman</span><br></pre></td></tr></table></figure>
+<h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new Hexo搭建个人博客</span><br></pre></td></tr></table></figure>
+<p>会在<strong>source/_posts/</strong>下生成文件<strong>Hexo搭建个人博客.md</strong>， 编辑此文件后生成静态html </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在进行deploy前先生成html</p>
+</blockquote>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><p>在github上建一个respository,名字随意，不用相信必须是<strong>name.github.io</strong>的话，在<em>__config.yml</em>中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/duanhjlt/blog.git</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意： type要用git，别用github，否则会报错</p>
+</blockquote>
+<p>然后执行:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ Hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server  </span><br><span class="line">=&gt; [info] Hexo is running at localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<h2 id="4-绑定域名"><a href="#4-绑定域名" class="headerlink" title="4.绑定域名"></a>4.绑定域名</h2><p>我是在万网申请的域名<strong>starship.pub</strong>（这个比较便宜），可以在<strong>阿里云</strong>上进行域名解析，也可以在<strong>dnspod</strong>上进行解析，我使用的是万网。</p>
+<h3 id="主域名绑定"><a href="#主域名绑定" class="headerlink" title="主域名绑定"></a>主域名绑定</h3><p>首先ping一下记住ip  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ping https://duanhjlt.github.io</span><br><span class="line">=&gt; 64 bytes from 151.101.36.133: icmp_seq=0 ttl=44 time=426.403 ms</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>ip可能会有变化，以ping为准</p>
+</blockquote>
+<p>在github上托管，首先建一个CNAME文件，里面写<strong>最终指向</strong>的域名</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> starship.pub &gt; public/CNAME</span><br></pre></td></tr></table></figure>
+<p><img src="/images/20160730110501.jpeg" alt="主域名"></p>
+<h3 id="子域名绑定"><a href="#子域名绑定" class="headerlink" title="子域名绑定"></a>子域名绑定</h3><p>首先要记录github的ip,同样要写CNAME文件  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ping github.com</span><br></pre></td></tr></table></figure>
+<p><img src="/images/20160730110601.jpeg" alt="子域名"></p>
+<p>经过漫长的等待，终于能看到了！！！<br>等有时间了在修改页面吧。。。。</p>
+<p>PS:<br>将blog本地迁移到另一台电脑后，重新发布就无法打开了。折腾了好几天，发现ip和原来也不一样了。各种google，各种baidu后，找到另一个方式</p>
+<ol>
+<li>CNAME文件修改为<strong>blog.starship.pub</strong><br><img src="/images/20170408171301.jpeg" alt="CNAME"></li>
+<li>域名解析添加 <strong>CNAME</strong> , 主机名为： <strong>blog</strong>, 记录值这： <strong>duanhjlt.github.io.</strong>（注意后面的 <strong>.</strong> ）<br><img src="/images/20170408171302.jpeg" alt="子域名"></li>
+</ol>
+<p>祝君好运</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://mattt.tk/2016/07/29/Hexo搭建个人博客/" data-title="Hexo搭建个人博客 | Starship" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/07/29/Hexo搭建个人博客/" data-title="Hexo搭建个人博客" data-url="http://mattt.tk/2016/07/29/Hexo搭建个人博客/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://onevcat.com/" target="_blank" title="喵神">喵神</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.devtang.com" target="_blank" title="唐巧的技术博客">唐巧的技术博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.ibireme.com" target="_blank" title="ibireme">ibireme</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://imtx.me" target="_blank" title="I&#39;M TUALATRIX">I&#39;M TUALATRIX</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.sunnyxx.com" target="_blank" title="sunnyxx">sunnyxx</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://adad184.com" target="_blank" title="里脊串的开发随笔">里脊串的开发随笔</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.leichunfeng.com" target="_blank" title="雷纯锋的技术博客">雷纯锋的技术博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.jianshu.com/users/b82d2721ba07/latest_articles" target="_blank" title="叶孤城___">叶孤城___</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://objccn.io" target="_blank" title="objcn">objcn</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://nshipster.cn" target="_blank" title="NSHipster">NSHipster</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://swift.gg/" target="_blank" title="SwiftGG">SwiftGG</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright" style="margin-top: 10px;">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="Alexander Duan">Alexander Duan</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"alexander"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
