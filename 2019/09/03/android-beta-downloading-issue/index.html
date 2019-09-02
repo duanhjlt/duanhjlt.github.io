@@ -4,24 +4,25 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>git仓库迁移 | CrazyKids</title>
+    <title>谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中 | CrazyKids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Alexander Duan">
     
 
     
-    <meta name="description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+    <meta name="description" content="Android Q 的 beta 版本已经趋于稳定，于是打算更新到 Q 看看，但是自始至终一直显示更新中。。。。    恢复 Google Play 商店至出厂版本，方法如下： 设置-&amp;gt;应用和通知-&amp;gt; Goolge Play 商店-&amp;gt;停用-&amp;gt;再启用。 恢复 Google Service 至出厂版本，同上。 如果无法点击“停用”，需要关闭“查找我的设备”。 设置-&amp;gt;安全">
+<meta name="keywords" content="Android Q, Pixel 2XL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git仓库迁移">
-<meta property="og:url" content="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/index.html">
+<meta property="og:title" content="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中">
+<meta property="og:url" content="http://blog.duanhjlt.com/2019/09/03/android-beta-downloading-issue/index.html">
 <meta property="og:site_name" content="CrazyKids">
-<meta property="og:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta property="og:description" content="Android Q 的 beta 版本已经趋于稳定，于是打算更新到 Q 看看，但是自始至终一直显示更新中。。。。    恢复 Google Play 商店至出厂版本，方法如下： 设置-&amp;gt;应用和通知-&amp;gt; Goolge Play 商店-&amp;gt;停用-&amp;gt;再启用。 恢复 Google Service 至出厂版本，同上。 如果无法点击“停用”，需要关闭“查找我的设备”。 设置-&amp;gt;安全">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-31T15:08:58.894Z">
+<meta property="og:updated_time" content="2019-09-02T22:21:40.153Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git仓库迁移">
-<meta name="twitter:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta name="twitter:title" content="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中">
+<meta name="twitter:description" content="Android Q 的 beta 版本已经趋于稳定，于是打算更新到 Q 看看，但是自始至终一直显示更新中。。。。    恢复 Google Play 商店至出厂版本，方法如下： 设置-&amp;gt;应用和通知-&amp;gt; Goolge Play 商店-&amp;gt;停用-&amp;gt;再启用。 恢复 Google Service 至出厂版本，同上。 如果无法点击“停用”，需要关闭“查找我的设备”。 设置-&amp;gt;安全">
 
     
     <link rel="alternative" href="/atom.xml" title="CrazyKids" type="application/atom+xml">
@@ -74,11 +75,11 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/08/31/git仓库迁移/" title="git仓库迁移" itemprop="url">git仓库迁移</a>
+      <a href="/2019/09/03/android-beta-downloading-issue/" title="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中" itemprop="url">谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中</a>
   </h1>
   
   <p class="article-time">
-    <time datetime="2019-08-31T14:42:24.000Z" itemprop="datePublished"> 发表于 2019-08-31</time>
+    <time datetime="2019-09-02T22:04:06.000Z" itemprop="datePublished"> 发表于 2019-09-03</time>
     
   </p>
 </header>
@@ -87,23 +88,28 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#增加仓库-B-地址"><span class="toc-number">1.</span> <span class="toc-text">增加仓库 B 地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式1，checkout-所有分支"><span class="toc-number">2.</span> <span class="toc-text">方式1，checkout 所有分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式2"><span class="toc-number">3.</span> <span class="toc-text">方式2</span></a></li></ol>
+			
 		
 		</div>
 		
-		<p>git 仓库迁移，一般分为两种情况，从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong> 和从本地直接上传到仓库 <strong>B</strong>。  </p>
-<p>##从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong><br>这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> --bare http://a.com/crazykids.git</span><br><span class="line">$ git push --mirror http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<p>###从本地直接上传到仓库 <strong>B</strong><br>有的时候需要将本地仓库直接全部 push 到仓库 <strong>B</strong>，比如仓库 <strong>A</strong> 真的的挂了，或者你有多仓库备份的习惯。一般 push 命令只能将当前 branch 或者已经 checkout 出来的分支 push 的远端。</p>
-<h4 id="增加仓库-B-地址"><a href="#增加仓库-B-地址" class="headerlink" title="增加仓库 B 地址"></a>增加仓库 <strong>B</strong> 地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add B http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<h4 id="方式1，checkout-所有分支"><a href="#方式1，checkout-所有分支" class="headerlink" title="方式1，checkout 所有分支"></a>方式1，checkout 所有分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git checkout -b <span class="variable">$lb</span> <span class="variable">$rb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git push -f B <span class="variable">$lb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git push --tags</span><br></pre></td></tr></table></figure>
-<p>不但命令麻烦，如果遇到分支差异比较大的，还经常出现问题。</p>
-<h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git push B <span class="string">'refs/remotes/origin/*'</span>:<span class="string">'refs/heads/*'</span> <span class="string">'refs/tags/*'</span>:<span class="string">'refs/tags/*'</span></span><br></pre></td></tr></table></figure>
+		<p>Android Q 的 beta 版本已经趋于稳定，于是打算更新到 Q 看看，但是自始至终一直显示更新中。。。。  </p>
+<ol>
+<li>恢复 Google Play 商店至出厂版本，方法如下：<br> 设置-&gt;应用和通知-&gt; Goolge Play 商店-&gt;停用-&gt;再启用。</li>
+<li>恢复 Google Service 至出厂版本，同上。<br> 如果无法点击“停用”，需要关闭“查找我的设备”。<br> 设置-&gt;安全和位置-&gt;查找我的设备。</li>
+<li>切换到英文</li>
+<li>操作完成，此时可以看到重新下载安装 Google Play 了，之后OTA也开始下载了。</li>
+</ol>
+<p>安装完成之后，记得恢复“查找我的设备”。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android-Q-Pixel-2XL/">Android Q, Pixel 2XL</a>
+  </div>
 
 </div>
 
@@ -111,7 +117,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/" data-title="git仓库迁移 | CrazyKids" data-tsina="" class="share clearfix">
+	  <div data-url="http://blog.duanhjlt.com/2019/09/03/android-beta-downloading-issue/" data-title="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中 | CrazyKids" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -124,19 +130,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2019/08/31/拉取Gerrit分支/" title="拉取Gerrit分支">
-  <strong>上一篇：</strong><br/>
-  <span>
-  拉取Gerrit分支</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/29/Hexo搭建个人博客/"  title="Hexo搭建个人博客">
+<a href="/2019/08/31/拉取Gerrit分支/"  title="拉取Gerrit分支">
  <strong>下一篇：</strong><br/> 
- <span>Hexo搭建个人博客
+ <span>拉取Gerrit分支
 </span>
 </a>
 </div>
@@ -145,7 +143,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2019/08/31/git仓库迁移/" data-title="git仓库迁移" data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/"></div>
+	<div class="ds-thread" data-thread-key="2019/09/03/android-beta-downloading-issue/" data-title="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中" data-url="http://blog.duanhjlt.com/2019/09/03/android-beta-downloading-issue/"></div>
 </section>
 
 
