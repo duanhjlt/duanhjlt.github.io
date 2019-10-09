@@ -4,25 +4,25 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>git仓库迁移 | CrazyKids</title>
+    <title>git 修改本地分支和远程分支 | CrazyKids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Alexander Duan">
     
 
     
-    <meta name="description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+    <meta name="description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git仓库迁移">
-<meta property="og:url" content="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/index.html">
+<meta property="og:title" content="git 修改本地分支和远程分支">
+<meta property="og:url" content="http://blog.duanhjlt.com/2019/10/09/git-branch-op/index.html">
 <meta property="og:site_name" content="CrazyKids">
-<meta property="og:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta property="og:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-09T15:06:06.160Z">
+<meta property="og:updated_time" content="2019-10-09T15:11:15.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git仓库迁移">
-<meta name="twitter:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta name="twitter:title" content="git 修改本地分支和远程分支">
+<meta name="twitter:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
 
     
     <link rel="alternative" href="/atom.xml" title="CrazyKids" type="application/atom+xml">
@@ -75,11 +75,11 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/08/31/git仓库迁移/" title="git仓库迁移" itemprop="url">git仓库迁移</a>
+      <a href="/2019/10/09/git-branch-op/" title="git 修改本地分支和远程分支" itemprop="url">git 修改本地分支和远程分支</a>
   </h1>
   
   <p class="article-time">
-    <time datetime="2019-08-31T14:42:24.000Z" itemprop="datePublished"> 发表于 2019-08-31</time>
+    <time datetime="2019-10-09T15:04:20.000Z" itemprop="datePublished"> 发表于 2019-10-09</time>
     
   </p>
 </header>
@@ -88,19 +88,16 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#增加仓库-B-地址"><span class="toc-number">1.</span> <span class="toc-text">增加仓库 B 地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式1，checkout-所有分支"><span class="toc-number">2.</span> <span class="toc-text">方式1，checkout 所有分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式2"><span class="toc-number">3.</span> <span class="toc-text">方式2</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看所有分支"><span class="toc-number">1.</span> <span class="toc-text">查看所有分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看远程分支"><span class="toc-number">2.</span> <span class="toc-text">查看远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看本地分支所关联的远程分支"><span class="toc-number">3.</span> <span class="toc-text">查看本地分支所关联的远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重命名本地分支"><span class="toc-number">4.</span> <span class="toc-text">重命名本地分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除远程分支"><span class="toc-number">5.</span> <span class="toc-text">删除远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推送新的分支"><span class="toc-number">6.</span> <span class="toc-text">推送新的分支</span></a></li></ol>
 		
 		</div>
 		
-		<p>git 仓库迁移，一般分为两种情况，从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong> 和从本地直接上传到仓库 <strong>B</strong>。  </p>
-<p>##从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong><br>这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> --bare http://a.com/crazykids.git</span><br><span class="line">$ git push --mirror http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<p>###从本地直接上传到仓库 <strong>B</strong><br>有的时候需要将本地仓库直接全部 push 到仓库 <strong>B</strong>，比如仓库 <strong>A</strong> 真的的挂了，或者你有多仓库备份的习惯。一般 push 命令只能将当前 branch 或者已经 checkout 出来的分支 push 的远端。</p>
-<h4 id="增加仓库-B-地址"><a href="#增加仓库-B-地址" class="headerlink" title="增加仓库 B 地址"></a>增加仓库 <strong>B</strong> 地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add B http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<h4 id="方式1，checkout-所有分支"><a href="#方式1，checkout-所有分支" class="headerlink" title="方式1，checkout 所有分支"></a>方式1，checkout 所有分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git checkout -b <span class="variable">$lb</span> <span class="variable">$rb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git push -f B <span class="variable">$lb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git push --tags</span><br></pre></td></tr></table></figure>
-<p>不但命令麻烦，如果遇到分支差异比较大的，还经常出现问题。</p>
-<h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git push B <span class="string">'refs/remotes/origin/*'</span>:<span class="string">'refs/heads/*'</span> <span class="string">'refs/tags/*'</span>:<span class="string">'refs/tags/*'</span></span><br></pre></td></tr></table></figure>
-  
+		<h2 id="查看所有分支"><a href="#查看所有分支" class="headerlink" title="查看所有分支"></a>查看所有分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure>
+<h2 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -r</span><br></pre></td></tr></table></figure>
+<h2 id="查看本地分支所关联的远程分支"><a href="#查看本地分支所关联的远程分支" class="headerlink" title="查看本地分支所关联的远程分支"></a>查看本地分支所关联的远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -vv</span><br></pre></td></tr></table></figure>
+<h2 id="重命名本地分支"><a href="#重命名本地分支" class="headerlink" title="重命名本地分支"></a>重命名本地分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -m old_branch new_branch</span><br></pre></td></tr></table></figure>
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :old_branch</span><br></pre></td></tr></table></figure>
+<h2 id="推送新的分支"><a href="#推送新的分支" class="headerlink" title="推送新的分支"></a>推送新的分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin new_branch</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -117,7 +114,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/" data-title="git仓库迁移 | CrazyKids" data-tsina="" class="share clearfix">
+	  <div data-url="http://blog.duanhjlt.com/2019/10/09/git-branch-op/" data-title="git 修改本地分支和远程分支 | CrazyKids" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -130,19 +127,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2019/08/31/拉取Gerrit分支/" title="拉取Gerrit分支">
-  <strong>上一篇：</strong><br/>
-  <span>
-  拉取Gerrit分支</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/29/Hexo搭建个人博客/"  title="Hexo搭建个人博客">
+<a href="/2019/09/03/android-beta-downloading-issue/"  title="谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中">
  <strong>下一篇：</strong><br/> 
- <span>Hexo搭建个人博客
+ <span>谷歌Pixel 2XL 下载Android Beta的OTA 始终显示正在更新中
 </span>
 </a>
 </div>
@@ -151,7 +140,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2019/08/31/git仓库迁移/" data-title="git仓库迁移" data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/"></div>
+	<div class="ds-thread" data-thread-key="2019/10/09/git-branch-op/" data-title="git 修改本地分支和远程分支" data-url="http://blog.duanhjlt.com/2019/10/09/git-branch-op/"></div>
 </section>
 
 
