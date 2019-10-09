@@ -11,18 +11,18 @@
     
 
     
-    <meta name="description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
+    <meta name="description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支12$ git branch -d -r origin/old_branch$ git push origin :old_branch 推送">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 修改本地分支和远程分支">
 <meta property="og:url" content="http://blog.duanhjlt.com/2019/10/09/git-branch-op/index.html">
 <meta property="og:site_name" content="CrazyKids">
-<meta property="og:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
+<meta property="og:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支12$ git branch -d -r origin/old_branch$ git push origin :old_branch 推送">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-09T15:11:15.249Z">
+<meta property="og:updated_time" content="2019-10-09T15:16:22.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 修改本地分支和远程分支">
-<meta name="twitter:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支1$ git push origin :old_branch 推送新的分支1$ git push -u origin new_branch">
+<meta name="twitter:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支12$ git branch -d -r origin/old_branch$ git push origin :old_branch 推送">
 
     
     <link rel="alternative" href="/atom.xml" title="CrazyKids" type="application/atom+xml">
@@ -88,7 +88,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看所有分支"><span class="toc-number">1.</span> <span class="toc-text">查看所有分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看远程分支"><span class="toc-number">2.</span> <span class="toc-text">查看远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看本地分支所关联的远程分支"><span class="toc-number">3.</span> <span class="toc-text">查看本地分支所关联的远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重命名本地分支"><span class="toc-number">4.</span> <span class="toc-text">重命名本地分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除远程分支"><span class="toc-number">5.</span> <span class="toc-text">删除远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推送新的分支"><span class="toc-number">6.</span> <span class="toc-text">推送新的分支</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看所有分支"><span class="toc-number">1.</span> <span class="toc-text">查看所有分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看远程分支"><span class="toc-number">2.</span> <span class="toc-text">查看远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看本地分支所关联的远程分支"><span class="toc-number">3.</span> <span class="toc-text">查看本地分支所关联的远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重命名本地分支"><span class="toc-number">4.</span> <span class="toc-text">重命名本地分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除远程分支"><span class="toc-number">5.</span> <span class="toc-text">删除远程分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推送新的分支"><span class="toc-number">6.</span> <span class="toc-text">推送新的分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置关联"><span class="toc-number">7.</span> <span class="toc-text">设置关联</span></a></li></ol>
 		
 		</div>
 		
@@ -96,8 +96,10 @@
 <h2 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -r</span><br></pre></td></tr></table></figure>
 <h2 id="查看本地分支所关联的远程分支"><a href="#查看本地分支所关联的远程分支" class="headerlink" title="查看本地分支所关联的远程分支"></a>查看本地分支所关联的远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -vv</span><br></pre></td></tr></table></figure>
 <h2 id="重命名本地分支"><a href="#重命名本地分支" class="headerlink" title="重命名本地分支"></a>重命名本地分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -m old_branch new_branch</span><br></pre></td></tr></table></figure>
-<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :old_branch</span><br></pre></td></tr></table></figure>
-<h2 id="推送新的分支"><a href="#推送新的分支" class="headerlink" title="推送新的分支"></a>推送新的分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin new_branch</span><br></pre></td></tr></table></figure>  
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d -r origin/old_branch</span><br><span class="line">$ git push origin :old_branch</span><br></pre></td></tr></table></figure>
+<h2 id="推送新的分支"><a href="#推送新的分支" class="headerlink" title="推送新的分支"></a>推送新的分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin new_branch</span><br></pre></td></tr></table></figure>
+<h2 id="设置关联"><a href="#设置关联" class="headerlink" title="设置关联"></a>设置关联</h2><p><code>`</code>bash<br>$ git branch –set-upstream-to=origin/branch branch</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -163,11 +165,11 @@
 			
 		
 			
-				<li><a href="/tags/gerrit/" title="gerrit">gerrit<sup>1</sup></a></li>
+				<li><a href="/tags/Android-Q-Pixel-2XL/" title="Android Q, Pixel 2XL">Android Q, Pixel 2XL<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Android-Q-Pixel-2XL/" title="Android Q, Pixel 2XL">Android Q, Pixel 2XL<sup>1</sup></a></li>
+				<li><a href="/tags/gerrit/" title="gerrit">gerrit<sup>1</sup></a></li>
 			
 		
 		</ul>
