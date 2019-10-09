@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="CrazyKids">
 <meta property="og:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支12$ git branch -d -r origin/old_branch$ git push origin :old_branch 推送">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-09T15:16:22.296Z">
+<meta property="og:updated_time" content="2019-10-09T15:18:23.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 修改本地分支和远程分支">
 <meta name="twitter:description" content="查看所有分支1$ git branch -a 查看远程分支1$ git branch -r 查看本地分支所关联的远程分支1$ git branch -vv 重命名本地分支1$ git branch -m old_branch new_branch 删除远程分支12$ git branch -d -r origin/old_branch$ git push origin :old_branch 推送">
@@ -98,8 +98,7 @@
 <h2 id="重命名本地分支"><a href="#重命名本地分支" class="headerlink" title="重命名本地分支"></a>重命名本地分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -m old_branch new_branch</span><br></pre></td></tr></table></figure>
 <h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d -r origin/old_branch</span><br><span class="line">$ git push origin :old_branch</span><br></pre></td></tr></table></figure>
 <h2 id="推送新的分支"><a href="#推送新的分支" class="headerlink" title="推送新的分支"></a>推送新的分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin new_branch</span><br></pre></td></tr></table></figure>
-<h2 id="设置关联"><a href="#设置关联" class="headerlink" title="设置关联"></a>设置关联</h2><p><code>`</code>bash<br>$ git branch –set-upstream-to=origin/branch branch</p>
-  
+<h2 id="设置关联"><a href="#设置关联" class="headerlink" title="设置关联"></a>设置关联</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --<span class="built_in">set</span>-upstream-to=origin/branch branch</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
