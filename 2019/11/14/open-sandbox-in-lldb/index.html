@@ -4,25 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>git仓库迁移 | CrazyKids</title>
+    <title>在LLDB中一键打开模拟器 Sandbox 路径 | CrazyKids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Alexander Duan">
     
 
     
-    <meta name="description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
-<meta name="keywords" content="git">
+    <meta name="description" content="打开 ~./lldbinit, 在里面加入一行： 1command alias sb script from subprocess import call; call([&quot;open&quot;, lldb.frame.EvaluateExpression(&quot;NSHomeDirectory()&quot;).GetObjectDescription()]); 中断时，在 lldb 里面打 sb 回车，就能打开模拟器当前">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git仓库迁移">
-<meta property="og:url" content="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/index.html">
+<meta property="og:title" content="在LLDB中一键打开模拟器 Sandbox 路径">
+<meta property="og:url" content="http://blog.duanhjlt.com/2019/11/14/open-sandbox-in-lldb/index.html">
 <meta property="og:site_name" content="CrazyKids">
-<meta property="og:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta property="og:description" content="打开 ~./lldbinit, 在里面加入一行： 1command alias sb script from subprocess import call; call([&quot;open&quot;, lldb.frame.EvaluateExpression(&quot;NSHomeDirectory()&quot;).GetObjectDescription()]); 中断时，在 lldb 里面打 sb 回车，就能打开模拟器当前">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-09T15:06:06.160Z">
+<meta property="og:updated_time" content="2019-11-14T14:06:06.567Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git仓库迁移">
-<meta name="twitter:description" content="git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。   ##从仓库 A 迁移到仓库 B这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： 12$ git clone --bare http://a.com/crazykids.git$ git push --mirror http://b.com/crazykid">
+<meta name="twitter:title" content="在LLDB中一键打开模拟器 Sandbox 路径">
+<meta name="twitter:description" content="打开 ~./lldbinit, 在里面加入一行： 1command alias sb script from subprocess import call; call([&quot;open&quot;, lldb.frame.EvaluateExpression(&quot;NSHomeDirectory()&quot;).GetObjectDescription()]); 中断时，在 lldb 里面打 sb 回车，就能打开模拟器当前">
 
     
     <link rel="alternative" href="/atom.xml" title="CrazyKids" type="application/atom+xml">
@@ -75,11 +74,11 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/08/31/git仓库迁移/" title="git仓库迁移" itemprop="url">git仓库迁移</a>
+      <a href="/2019/11/14/open-sandbox-in-lldb/" title="在LLDB中一键打开模拟器 Sandbox 路径" itemprop="url">在LLDB中一键打开模拟器 Sandbox 路径</a>
   </h1>
   
   <p class="article-time">
-    <time datetime="2019-08-31T14:42:24.000Z" itemprop="datePublished"> 发表于 2019-08-31</time>
+    <time datetime="2019-11-14T14:03:32.000Z" itemprop="datePublished"> 发表于 2019-11-14</time>
     
   </p>
 </header>
@@ -88,28 +87,28 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#增加仓库-B-地址"><span class="toc-number">1.</span> <span class="toc-text">增加仓库 B 地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式1，checkout-所有分支"><span class="toc-number">2.</span> <span class="toc-text">方式1，checkout 所有分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方式2"><span class="toc-number">3.</span> <span class="toc-text">方式2</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原理"><span class="toc-number">1.</span> <span class="toc-text">原理</span></a></li></ol>
 		
 		</div>
 		
-		<p>git 仓库迁移，一般分为两种情况，从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong> 和从本地直接上传到仓库 <strong>B</strong>。  </p>
-<p>##从仓库 <strong>A</strong> 迁移到仓库 <strong>B</strong><br>这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> --bare http://a.com/crazykids.git</span><br><span class="line">$ git push --mirror http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<p>###从本地直接上传到仓库 <strong>B</strong><br>有的时候需要将本地仓库直接全部 push 到仓库 <strong>B</strong>，比如仓库 <strong>A</strong> 真的的挂了，或者你有多仓库备份的习惯。一般 push 命令只能将当前 branch 或者已经 checkout 出来的分支 push 的远端。</p>
-<h4 id="增加仓库-B-地址"><a href="#增加仓库-B-地址" class="headerlink" title="增加仓库 B 地址"></a>增加仓库 <strong>B</strong> 地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add B http://b.com/crazykids.git</span><br></pre></td></tr></table></figure>
-<h4 id="方式1，checkout-所有分支"><a href="#方式1，checkout-所有分支" class="headerlink" title="方式1，checkout 所有分支"></a>方式1，checkout 所有分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git checkout -b <span class="variable">$lb</span> <span class="variable">$rb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git branch -r | grep origin | grep -v HEAD|<span class="keyword">while</span> <span class="built_in">read</span> rb;<span class="keyword">do</span> lb=$(<span class="built_in">echo</span> <span class="variable">$&#123;rb&#125;</span>|cut -d/ -f 2-);git push -f B <span class="variable">$lb</span>;<span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">$ git push --tags</span><br></pre></td></tr></table></figure>
-<p>不但命令麻烦，如果遇到分支差异比较大的，还经常出现问题。</p>
-<h4 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line"></span><br><span class="line">$ git push B <span class="string">'refs/remotes/origin/*'</span>:<span class="string">'refs/heads/*'</span> <span class="string">'refs/tags/*'</span>:<span class="string">'refs/tags/*'</span></span><br></pre></td></tr></table></figure>
-  
+		<p>打开 ~./lldbinit, 在里面加入一行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">command</span> <span class="built_in">alias</span> sb script from subprocess import call; call([<span class="string">"open"</span>, lldb.frame.EvaluateExpression(<span class="string">"NSHomeDirectory()"</span>).GetObjectDescription()]);</span><br></pre></td></tr></table></figure>
+<p>中断时，在 lldb 里面打 sb 回车，就能打开模拟器当前运行的 app 的沙箱路径了。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>lldb中允许我们执行python代码，中断时使用script命令即可进入python模式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(lldb) script</span><br></pre></td></tr></table></figure></p>
+<p>在 python 中我们可以通过 lldb.frame 操纵 lldb，比如执行表达式，会返回一个 lldb.SBValue对象：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//python code</span><br><span class="line">lldb.frame.EvaluateExpression(<span class="string">"NSHomeDirectory()"</span>)</span><br><span class="line"></span><br><span class="line">//<span class="built_in">return</span></span><br><span class="line">&lt;lldb.SBValue; proxy of &lt;Swig Object of <span class="built_in">type</span> <span class="string">'lldb::SBValue *'</span> at 0x13ded2bd0&gt; &gt;</span><br></pre></td></tr></table></figure>
+<p>然后我们格式化成python字符串  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//python code</span><br><span class="line">lldb.frame.EvaluateExpression(<span class="string">"NSHomeDirectory()"</span>).GetObjectDescription();</span><br><span class="line"></span><br><span class="line">// <span class="built_in">return</span></span><br><span class="line"><span class="string">'/Users/username/Library/Developer/CoreSimulator/Devices/5D48B08A-44C2-4AC5-B52D-725150EA1091/data/Containers/Data/Application/8331B6D2-FC68-4523-8093-94FD9487FF74'</span></span><br></pre></td></tr></table></figure>
+<p>然后在python中使用call调用shell的open，就可以打开沙箱路径了：  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//python code</span><br><span class="line">from subprocess import call; call([<span class="string">"open"</span>, pathOfSandbox)</span><br></pre></td></tr></table></figure>
+<p>这些命令可以连起来在lldb中执行：  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(lldb) script from subprocess import call; call([<span class="string">"open"</span>, lldb.frame.EvaluateExpression(<span class="string">"NSHomeDirectory()"</span>).GetObjectDescription()]);</span><br></pre></td></tr></table></figure>
+<p>然而实在太长了，于是我们在lldb中加了个alias：  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(lldb) <span class="built_in">command</span> <span class="built_in">alias</span> sb script from subprocess import call; call([<span class="string">"open"</span>, lldb.frame.EvaluateExpression(<span class="string">"NSHomeDirectory()"</span>).GetObjectDescription()]);</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/git/">git</a>
-  </div>
 
 </div>
 
@@ -117,7 +116,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/" data-title="git仓库迁移 | CrazyKids" data-tsina="" class="share clearfix">
+	  <div data-url="http://blog.duanhjlt.com/2019/11/14/open-sandbox-in-lldb/" data-title="在LLDB中一键打开模拟器 Sandbox 路径 | CrazyKids" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -130,19 +129,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2019/08/31/拉取Gerrit分支/" title="拉取Gerrit分支">
-  <strong>上一篇：</strong><br/>
-  <span>
-  拉取Gerrit分支</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/29/Hexo搭建个人博客/"  title="Hexo搭建个人博客">
+<a href="/2019/10/09/git-branch-op/"  title="git 修改本地分支和远程分支">
  <strong>下一篇：</strong><br/> 
- <span>Hexo搭建个人博客
+ <span>git 修改本地分支和远程分支
 </span>
 </a>
 </div>
@@ -151,7 +142,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2019/08/31/git仓库迁移/" data-title="git仓库迁移" data-url="http://blog.duanhjlt.com/2019/08/31/git仓库迁移/"></div>
+	<div class="ds-thread" data-thread-key="2019/11/14/open-sandbox-in-lldb/" data-title="在LLDB中一键打开模拟器 Sandbox 路径" data-url="http://blog.duanhjlt.com/2019/11/14/open-sandbox-in-lldb/"></div>
 </section>
 
 
