@@ -1,6 +1,5 @@
 
-  
-    <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -12,17 +11,17 @@
     
 
     
-    <meta name="description" content="blog.source">
-<meta property="og:type" content="website">
+    <meta name="description" content="title: git clone 非标准的ssh端口(非22）端口  date: 2020-02-1 06:04:06   tags:   通常我们设置 ssh 方式访问 git 仓库时使用如下方式：     1$ git clone git@git.woshiceshi.com/woshiceshi/ceshi.git   但是，如果端口不是标准的22，就会有问题，   1$ git cl">
+<meta property="og:type" content="article">
 <meta property="og:title" content="CrazyKids">
-<meta property="og:url" content="http://blog.duanhjlt.com/README.html">
+<meta property="og:url" content="http://blog.duanhjlt.com/2020/02/20/git-clone-ssh/index.html">
 <meta property="og:site_name" content="CrazyKids">
-<meta property="og:description" content="blog.source">
+<meta property="og:description" content="title: git clone 非标准的ssh端口(非22）端口  date: 2020-02-1 06:04:06   tags:   通常我们设置 ssh 方式访问 git 仓库时使用如下方式：     1$ git clone git@git.woshiceshi.com/woshiceshi/ceshi.git   但是，如果端口不是标准的22，就会有问题，   1$ git cl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-04-01T16:01:13.000Z">
+<meta property="og:updated_time" content="2020-02-20T02:05:21.759Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CrazyKids">
-<meta name="twitter:description" content="blog.source">
+<meta name="twitter:description" content="title: git clone 非标准的ssh端口(非22）端口  date: 2020-02-1 06:04:06   tags:   通常我们设置 ssh 方式访问 git 仓库时使用如下方式：     1$ git clone git@git.woshiceshi.com/woshiceshi/ceshi.git   但是，如果端口不是标准的22，就会有问题，   1$ git cl">
 
     
     <link rel="alternative" href="/atom.xml" title="CrazyKids" type="application/atom+xml">
@@ -34,9 +33,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-      <body>
-        <header>
-          
+  <body>
+    <header>
+      
 <div>
 		
 			<div id="textlogo">
@@ -67,25 +66,39 @@
 				</ul>
 			</nav>			
 </div>
-        </header>
-        <div id="container">
-          <div id="main" class="page" itemscope itemprop="blogPost">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/README.html" title="" itemprop="url"></a>
+      <a href="/2020/02/20/git-clone-ssh/" title="" itemprop="url"></a>
   </h1>
   
   <p class="article-time">
-    <time datetime="2018-03-19T15:43:10.484Z" itemprop="datePublished"> 发表于 2018-03-19</time>
+    <time datetime="2020-02-20T02:05:21.759Z" itemprop="datePublished"> 发表于 2020-02-20</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		<h1 id="blog-source"><a href="#blog-source" class="headerlink" title="blog.source"></a>blog.source</h1>  
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags"><span class="toc-number">1.</span> <span class="toc-text">  tags: </span></a></li></ol>
+		
+		</div>
+		
+		<hr>
+<p>  title: git clone 非标准的ssh端口(非22）端口<br>  date: 2020-02-1 06:04:06</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="  tags: "></a>  tags: </h2><p>  通常我们设置 ssh 方式访问 git 仓库时使用如下方式：  </p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@git.woshiceshi.com/woshiceshi/ceshi.git</span><br></pre></td></tr></table></figure>
+<p>  但是，如果端口不是标准的22，就会有问题，</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@192.168.0.17:32780/woshiceshi/ceshi.git</span><br></pre></td></tr></table></figure>
+<p>  此时需要使用新的方式，如下:</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ssh://git@192.168.0.17:32780/woshiceshi/ceshi.git</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -97,7 +110,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://blog.duanhjlt.com/README.html" data-title="CrazyKids" data-tsina="" class="share clearfix">
+	  <div data-url="http://blog.duanhjlt.com/2020/02/20/git-clone-ssh/" data-title="CrazyKids" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -108,15 +121,84 @@
    	       
 	</article>
 	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2019/11/15/install-emacs-on-windows/"  title="Install spacemacs on windows">
+ <strong>下一篇：</strong><br/> 
+ <span>Install spacemacs on windows
+</span>
+</a>
+</div>
+
+</nav>
+
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="README.html" data-title="" data-url="http://blog.duanhjlt.com/README.html"></div>
+	<div class="ds-thread" data-thread-key="2020/02/20/git-clone-ssh/" data-title="" data-url="http://blog.duanhjlt.com/2020/02/20/git-clone-ssh/"></div>
 </section>
 
 
 </div>  
-        </div>
-        <footer><div id="footer" >
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/git/" title="git">git<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Android-Q-Pixel-2XL/" title="Android Q, Pixel 2XL">Android Q, Pixel 2XL<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/gerrit/" title="gerrit">gerrit<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://objccn.io" target="_blank" title="objcn">objcn</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://nshipster.cn" target="_blank" title="NSHipster">NSHipster</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://swift.gg/" target="_blank" title="SwiftGG">SwiftGG</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	
 	<div class="social-font" class="clearfix">
@@ -143,7 +225,7 @@
 		</p>
 </div>
 </footer>
-        <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -189,6 +271,32 @@ $(document).ready(function(){
       o.css('display', 'none');
         
     }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -292,6 +400,5 @@ $(document).ready(function(){
 
 <!-- Tiny_search End -->
 
-      </body>
-     </html>
-     
+  </body>
+</html>
