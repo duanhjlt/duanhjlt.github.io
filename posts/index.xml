@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on CrazyKids Site</title>
+    <link>http://duanhjlt.github.io/posts/</link>
+    <description>Recent content in Posts on CrazyKids Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>duanhjlt@163.com (duanhongjin)</managingEditor>
+    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster>
+    <lastBuildDate>Sat, 02 Dec 2023 16:12:49 +0800</lastBuildDate><atom:link href="http://duanhjlt.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test1</title>
+      <link>http://duanhjlt.github.io/posts/test1/</link>
+      <pubDate>Sat, 02 Dec 2023 16:12:49 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>http://duanhjlt.github.io/posts/test1/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+  </channel>
+</rss>
