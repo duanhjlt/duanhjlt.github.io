@@ -7,6 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>duanhjlt@163.com (duanhongjin)</managingEditor>
-    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster><atom:link href="https://blog.duanhjlt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster>
+    <lastBuildDate>Mon, 25 Dec 2023 22:30:34 +0800</lastBuildDate><atom:link href="https://blog.duanhjlt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://blog.duanhjlt.com/tags/blog/</link>
+      <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>https://blog.duanhjlt.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://blog.duanhjlt.com/tags/github/</link>
+      <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>https://blog.duanhjlt.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://blog.duanhjlt.com/tags/hugo/</link>
+      <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>https://blog.duanhjlt.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pages</title>
+      <link>https://blog.duanhjlt.com/tags/pages/</link>
+      <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>https://blog.duanhjlt.com/tags/pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>建站</title>
+      <link>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
+      <author>duanhjlt@163.com (duanhongjin)</author>
+      <guid>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
