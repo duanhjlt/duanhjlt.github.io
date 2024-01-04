@@ -5,8 +5,6 @@
     <link>https://blog.duanhjlt.com/categories/</link>
     <description>Recent content in Categories on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>duanhjlt@163.com (duanhongjin)</managingEditor>
-    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster><atom:link href="https://blog.duanhjlt.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language><atom:link href="https://blog.duanhjlt.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

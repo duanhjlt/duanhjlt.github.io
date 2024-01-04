@@ -5,15 +5,13 @@
     <link>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 建站 on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>duanhjlt@163.com (duanhongjin)</managingEditor>
-    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster>
+    <language>zh</language>
     <lastBuildDate>Mon, 25 Dec 2023 22:30:34 +0800</lastBuildDate><atom:link href="https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages 建站</title>
       <link>https://blog.duanhjlt.com/posts/hugo-site/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/posts/hugo-site/</guid>
       <description>Hugo 是由 Go 语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。</description>
     </item>

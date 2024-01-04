@@ -5,15 +5,13 @@
     <link>https://blog.duanhjlt.com/tags/</link>
     <description>Recent content in Tags on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>duanhjlt@163.com (duanhongjin)</managingEditor>
-    <webMaster>duanhjlt@163.com (duanhongjin)</webMaster>
+    <language>zh</language>
     <lastBuildDate>Thu, 04 Jan 2024 22:35:39 +0800</lastBuildDate><atom:link href="https://blog.duanhjlt.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://blog.duanhjlt.com/tags/blog/</link>
       <pubDate>Thu, 04 Jan 2024 22:35:39 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/blog/</guid>
       <description></description>
     </item>
@@ -22,7 +20,7 @@
       <title>git</title>
       <link>https://blog.duanhjlt.com/tags/git/</link>
       <pubDate>Thu, 04 Jan 2024 22:35:39 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/git/</guid>
       <description></description>
     </item>
@@ -31,7 +29,7 @@
       <title>github</title>
       <link>https://blog.duanhjlt.com/tags/github/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/github/</guid>
       <description></description>
     </item>
@@ -40,7 +38,7 @@
       <title>hugo</title>
       <link>https://blog.duanhjlt.com/tags/hugo/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/hugo/</guid>
       <description></description>
     </item>
@@ -49,7 +47,7 @@
       <title>pages</title>
       <link>https://blog.duanhjlt.com/tags/pages/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/pages/</guid>
       <description></description>
     </item>
@@ -58,7 +56,7 @@
       <title>建站</title>
       <link>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
-      <author>duanhjlt@163.com (duanhongjin)</author>
+      
       <guid>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</guid>
       <description></description>
     </item>
