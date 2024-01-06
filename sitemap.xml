@@ -2,37 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.duanhjlt.com/tags/blog/</loc>
-    <lastmod>2024-01-04T22:35:39+08:00</lastmod>
-  </url><url>
     <loc>https://blog.duanhjlt.com/</loc>
-    <lastmod>2024-01-04T22:35:39+08:00</lastmod>
+    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.duanhjlt.com/tags/git/</loc>
-    <lastmod>2024-01-04T22:35:39+08:00</lastmod>
+    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.duanhjlt.com/posts/git-mirgration/</loc>
+    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.duanhjlt.com/tags/</loc>
+    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.duanhjlt.com/posts/</loc>
+    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.duanhjlt.com/posts/git_branch/</loc>
     <lastmod>2024-01-04T22:35:39+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.duanhjlt.com/tags/</loc>
-    <lastmod>2024-01-04T22:35:39+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.duanhjlt.com/posts/</loc>
-    <lastmod>2024-01-04T22:35:39+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.duanhjlt.com/tags/github/</loc>
-    <lastmod>2023-12-25T22:30:34+08:00</lastmod>
   </url><url>
     <loc>https://blog.duanhjlt.com/tags/hugo/</loc>
     <lastmod>2023-12-25T22:30:34+08:00</lastmod>
   </url><url>
     <loc>https://blog.duanhjlt.com/posts/hugo-site/</loc>
-    <lastmod>2023-12-25T22:30:34+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.duanhjlt.com/tags/pages/</loc>
-    <lastmod>2023-12-25T22:30:34+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.duanhjlt.com/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2023-12-25T22:30:34+08:00</lastmod>
   </url><url>
     <loc>https://blog.duanhjlt.com/about/</loc>
