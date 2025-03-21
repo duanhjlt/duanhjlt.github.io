@@ -6,7 +6,16 @@
     <description>Recent content on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 06 Jan 2024 12:20:23 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Mar 2025 09:43:44 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blackscreen</title>
+      <link>https://blog.crazykids.tech/posts/blackscreen/</link>
+      <pubDate>Fri, 21 Mar 2025 09:43:44 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/posts/blackscreen/</guid>
+      <description>Blackscreennow.space 是您探索黑色魅力的终极之选。我们坚信，简约与优雅是打造引人入胜视觉体验的核心所在。</description>
+    </item>
+    
     <item>
       <title>Git 仓库迁移</title>
       <link>https://blog.crazykids.tech/posts/git-mirgration/</link>
