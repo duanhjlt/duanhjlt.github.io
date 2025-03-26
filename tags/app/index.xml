@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>app on CrazyKids&#39;s Blog</title>
+    <link>https://blog.crazykids.tech/tags/app/</link>
+    <description>Recent content in app on CrazyKids&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 26 Mar 2025 14:28:50 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>饭点儿</title>
+      <link>https://blog.crazykids.tech/posts/fan-dian-er/</link>
+      <pubDate>Wed, 26 Mar 2025 14:28:50 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/posts/fan-dian-er/</guid>
+      <description>到饭点儿，轻轻一摇推荐附近的餐馆</description>
+    </item>
+    
+  </channel>
+</rss>
