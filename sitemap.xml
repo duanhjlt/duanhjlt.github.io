@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.crazykids.tech/tags/blackscreennow.space/</loc>
-    <lastmod>2025-03-21T09:46:23+08:00</lastmod>
-  </url><url>
     <loc>https://blog.crazykids.tech/</loc>
+    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/posts/fan-dian-er/</loc>
+    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/posts/</loc>
+    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/tags/blackscreennow.space/</loc>
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/tags/</loc>
@@ -15,9 +21,6 @@
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/tags/whitescreen/</loc>
-    <lastmod>2025-03-21T09:46:23+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.crazykids.tech/posts/</loc>
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/posts/blackscreen/</loc>
