@@ -5,7 +5,17 @@
     <link>https://blog.crazykids.tech/en/</link>
     <description>Recent content on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://blog.crazykids.tech/en/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Mar 2025 10:04:41 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black Screen</title>
+      <link>https://blog.crazykids.tech/en/posts/blackscreen/</link>
+      <pubDate>Fri, 28 Mar 2025 10:04:41 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/en/posts/blackscreen/</guid>
+      <description>Your ultimate destination for harnessing the allure of black.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://blog.crazykids.tech/en/about/</link>

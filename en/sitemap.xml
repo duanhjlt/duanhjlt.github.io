@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.crazykids.tech/en/posts/blackscreen/</loc>
+    <lastmod>2025-03-28T10:04:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/blackscreen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/blackscreen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/tags/blackscreennow.space/</loc>
+    <lastmod>2025-03-28T10:04:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/blackscreennow.space/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/</loc>
+    <lastmod>2025-03-28T10:04:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/</loc>
+    <lastmod>2025-03-28T10:04:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/tags/</loc>
+    <lastmod>2025-03-28T10:04:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/en/about/</loc>
     <lastmod>2023-12-03T10:54:00+08:00</lastmod>
     <xhtml:link
@@ -27,30 +92,6 @@
                 href="https://blog.crazykids.tech/en/categories/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
-                />
-  </url><url>
     <loc>https://blog.crazykids.tech/en/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -73,18 +114,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/series/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/"
                 />
   </url>
 </urlset>
