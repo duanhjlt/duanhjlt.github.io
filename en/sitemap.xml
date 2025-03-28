@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.crazykids.tech/en/tags/blackscreennow.space/</loc>
-    <lastmod>2025-03-28T11:31:49+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-03-28T11:31:49+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-03-28T11:31:49+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/</loc>
-    <lastmod>2025-03-28T11:31:49+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -52,6 +52,58 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/yellow-screen/</loc>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/yellow-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/yellow-screen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/red-screen/</loc>
+    <lastmod>2025-03-28T15:34:38+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/red-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/red-screen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/green-screen/</loc>
+    <lastmod>2025-03-28T15:07:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/green-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/green-screen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/blue-screen/</loc>
+    <lastmod>2025-03-28T14:48:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/blue-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/blue-screen/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/whitescreen/</loc>

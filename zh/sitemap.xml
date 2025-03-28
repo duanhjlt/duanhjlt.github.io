@@ -2,11 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.crazykids.tech/zh/tags/app/</loc>
-    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/zh/tags/blackscreennow.space/</loc>
+    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/blackscreennow.space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
+                />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/</loc>
-    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +29,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -31,11 +41,21 @@
                 href="https://blog.crazykids.tech/zh/tags/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/zh/posts/fan-dian-er/</loc>
-    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/zh/posts/yellow-screen/</loc>
+    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/yellow-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/yellow-screen/"
+                />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,18 +67,50 @@
                 href="https://blog.crazykids.tech/zh/posts/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/blackscreennow.space/</loc>
-    <lastmod>2025-03-21T09:46:23+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/zh/posts/red-screen/</loc>
+    <lastmod>2025-03-28T15:34:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/blackscreennow.space/"
+                href="https://blog.crazykids.tech/en/posts/red-screen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
+                href="https://blog.crazykids.tech/zh/posts/red-screen/"
                 />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/green-screen/</loc>
+    <lastmod>2025-03-28T15:07:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/green-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/green-screen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/blue-screen/</loc>
+    <lastmod>2025-03-28T14:48:01+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/blue-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/blue-screen/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/app/</loc>
+    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/fan-dian-er/</loc>
+    <lastmod>2025-03-26T14:28:50+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/whitescreen/</loc>
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
