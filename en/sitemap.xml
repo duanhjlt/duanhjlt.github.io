@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.crazykids.tech/en/tags/blackscreennow.space/</loc>
-    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/blackscreennow.space/"
-                />
-  </url><url>
     <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -42,7 +29,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/</loc>
-    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -52,6 +39,58 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/xvm-windows/</loc>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/xvm-windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/xvm-windows/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/tags/xvm/</loc>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/xvm/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/xvm/</loc>
+    <lastmod>2025-03-28T16:00:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/xvm/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/tags/blackscreennow.space/</loc>
+    <lastmod>2025-03-28T15:34:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/blackscreennow.space/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/yellow-screen/</loc>

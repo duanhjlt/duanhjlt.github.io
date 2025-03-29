@@ -2,6 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.crazykids.tech/zh/</loc>
+    <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/</loc>
+    <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/xvm-windows/</loc>
+    <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/xvm-windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/xvm-windows/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/xvm/</loc>
+    <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/xvm/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/</loc>
+    <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/xvm/</loc>
+    <lastmod>2025-03-28T16:00:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/xvm/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/blackscreennow.space/</loc>
     <lastmod>2025-03-28T15:34:46+08:00</lastmod>
     <xhtml:link
@@ -15,32 +93,6 @@
                 href="https://blog.crazykids.tech/zh/tags/blackscreennow.space/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/zh/</loc>
-    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/"
-                />
-  </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/yellow-screen/</loc>
     <lastmod>2025-03-28T15:34:46+08:00</lastmod>
     <xhtml:link
@@ -52,19 +104,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://blog.crazykids.tech/zh/posts/yellow-screen/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-03-28T15:34:46+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/red-screen/</loc>
