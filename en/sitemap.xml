@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
+    <lastmod>2025-04-12T23:06:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -15,8 +15,21 @@
                 href="https://blog.crazykids.tech/en/"
                 />
   </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/memora/</loc>
+    <lastmod>2025-04-12T23:06:27+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/memora/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/memora/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
+    <lastmod>2025-04-12T23:06:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
