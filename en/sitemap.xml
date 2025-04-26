@@ -54,19 +54,6 @@
                 href="https://blog.crazykids.tech/en/tags/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/en/posts/xvm-windows/</loc>
-    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/xvm-windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/xvm-windows/"
-                />
-  </url><url>
     <loc>https://blog.crazykids.tech/en/tags/xvm/</loc>
     <lastmod>2025-03-28T23:21:09+08:00</lastmod>
     <xhtml:link
@@ -78,6 +65,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/xvm/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/xvm-windows/</loc>
+    <lastmod>2025-03-28T23:21:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/xvm-windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/xvm-windows/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/xvm/</loc>
