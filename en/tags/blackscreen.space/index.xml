@@ -1,39 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CrazyKids&#39;s Blog</title>
-    <link>https://blog.crazykids.tech/en/</link>
-    <description>Recent content on CrazyKids&#39;s Blog</description>
+    <title>blackscreen.space on CrazyKids&#39;s Blog</title>
+    <link>https://blog.crazykids.tech/en/tags/blackscreen.space/</link>
+    <description>Recent content in blackscreen.space on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Apr 2025 23:06:27 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Memora: Read It Later App for iOS &amp; macOS with Offline Reading</title>
-      <link>https://blog.crazykids.tech/en/posts/memora/</link>
-      <pubDate>Sat, 12 Apr 2025 23:06:27 +0800</pubDate>
-      
-      <guid>https://blog.crazykids.tech/en/posts/memora/</guid>
-      <description>Memora is a secure read it later app for iOS and macOS. Save web pages offline, sync via iCloud, and enjoy distraction-free reading. Organize with tags and search easily.</description>
-    </item>
-    
-    <item>
-      <title>xvm: Version Manager on windows for Node.js, Go, Python</title>
-      <link>https://blog.crazykids.tech/en/posts/xvm-windows/</link>
-      <pubDate>Fri, 28 Mar 2025 23:21:09 +0800</pubDate>
-      
-      <guid>https://blog.crazykids.tech/en/posts/xvm-windows/</guid>
-      <description>xvm is an extendable version manager on windows for Node.js, Go, and Python. Learn to manage multiple language versions with this open-source tool.</description>
-    </item>
-    
-    <item>
-      <title>xvm: Version Manager for Node.js, Go, Python</title>
-      <link>https://blog.crazykids.tech/en/posts/xvm/</link>
-      <pubDate>Fri, 28 Mar 2025 16:00:23 +0800</pubDate>
-      
-      <guid>https://blog.crazykids.tech/en/posts/xvm/</guid>
-      <description>xvm is an extendable version manager for Node.js, Go, and Python. Learn to manage multiple language versions with this open-source tool.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 28 Mar 2025 15:34:48 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/en/tags/blackscreen.space/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yellow Screen</title>
       <link>https://blog.crazykids.tech/en/posts/yellow-screen/</link>
@@ -87,16 +60,6 @@
       <guid>https://blog.crazykids.tech/en/posts/blackscreen/</guid>
       <description>Step into Blackscreen.space and experience the ultimate allure of a black screen.</description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://blog.crazykids.tech/en/about/</link>
-      <pubDate>Sun, 03 Dec 2023 10:54:00 +0800</pubDate>
-      
-      <guid>https://blog.crazykids.tech/en/about/</guid>
-      <description>Memora - Memory and More: Read it later and Notes. Black Screen: Your ultimate destination for harnessing the allure of black. xvm: [node|golang|python] Version Manager xvm-windows: [node|golang|python] Version Manager It is friday?: Check if it is friday? The best day of the week. Contact me E-mail: duanhjlt{at}gmail.com Github: duan0120 X: @alexander_duan Telegram: @duanhjlt</description>
-    </item>
-    
     
   </channel>
 </rss>
