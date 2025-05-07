@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>hugo on CrazyKids&#39;s Blog</title>
-    <link>https://blog.crazykids.tech/zh/tags/hugo/</link>
+    <link>https://www.crazykids.tech/zh/tags/hugo/</link>
     <description>Recent content in hugo on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 25 Dec 2023 22:30:34 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Dec 2023 22:30:34 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages 建站</title>
-      <link>https://blog.crazykids.tech/zh/posts/hugo-site/</link>
+      <link>https://www.crazykids.tech/zh/posts/hugo-site/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/posts/hugo-site/</guid>
+      <guid>https://www.crazykids.tech/zh/posts/hugo-site/</guid>
       <description>Hugo 是由 Go 语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。</description>
     </item>
     
