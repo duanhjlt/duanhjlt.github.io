@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.crazykids.tech/zh/tags/app/</loc>
-    <lastmod>2025-04-12T22:56:21+08:00</lastmod>
-  </url><url>
     <loc>https://www.crazykids.tech/zh/</loc>
-    <lastmod>2025-04-12T22:56:21+08:00</lastmod>
+    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -17,6 +14,61 @@
                 hreflang="zh"
                 href="https://www.crazykids.tech/zh/"
                 />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/tags/devutils/</loc>
+    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/tags/devutils/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/tags/devutils/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/tags/</loc>
+    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/tags/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/posts/timestamps/</loc>
+    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/posts/timestamps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/posts/timestamps/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/posts/</loc>
+    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/posts/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/tags/app/</loc>
+    <lastmod>2025-04-12T22:56:21+08:00</lastmod>
   </url><url>
     <loc>https://www.crazykids.tech/zh/posts/memora/</loc>
     <lastmod>2025-04-12T22:56:21+08:00</lastmod>
@@ -29,32 +81,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://www.crazykids.tech/zh/posts/memora/"
-                />
-  </url><url>
-    <loc>https://www.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-04-12T22:56:21+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.crazykids.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.crazykids.tech/zh/tags/"
-                />
-  </url><url>
-    <loc>https://www.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-04-12T22:56:21+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.crazykids.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.crazykids.tech/zh/posts/"
                 />
   </url><url>
     <loc>https://www.crazykids.tech/zh/tags/xvm/</loc>

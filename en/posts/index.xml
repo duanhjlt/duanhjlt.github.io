@@ -6,7 +6,16 @@
     <description>Recent content in Posts on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Apr 2025 23:06:27 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 May 2025 22:41:35 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Convert Datetime to Timestamp - Free Tool | DevUtils</title>
+      <link>https://www.crazykids.tech/en/posts/timestamps/</link>
+      <pubDate>Wed, 07 May 2025 22:41:35 +0800</pubDate>
+      
+      <guid>https://www.crazykids.tech/en/posts/timestamps/</guid>
+      <description>Free online timestamp converter! Quickly convert datetime to Unix timestamp or timestamp to datetime, supports multiple formats, try now!</description>
+    </item>
+    
     <item>
       <title>Memora: Read It Later App for iOS &amp; macOS with Offline Reading</title>
       <link>https://www.crazykids.tech/en/posts/memora/</link>
