@@ -6,7 +6,16 @@
     <description>Recent content in git on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 06 Jan 2024 12:20:23 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 May 2025 23:04:09 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同一个系统上管理多个github账号</title>
+      <link>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</link>
+      <pubDate>Wed, 07 May 2025 23:04:09 +0800</pubDate>
+      
+      <guid>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</guid>
+      <description>如何在同一个系统上使用ssh方式管理多个github账号？</description>
+    </item>
+    
     <item>
       <title>Git 仓库迁移</title>
       <link>https://www.crazykids.tech/zh/posts/git-mirgration/</link>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.crazykids.tech/zh/</loc>
-    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,38 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://www.crazykids.tech/zh/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/tags/git/</loc>
+    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/tags/</loc>
+    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/tags/"
+                />
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</loc>
+    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
+  </url><url>
+    <loc>https://www.crazykids.tech/zh/posts/</loc>
+    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.crazykids.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.crazykids.tech/zh/posts/"
                 />
   </url><url>
     <loc>https://www.crazykids.tech/zh/tags/devutils/</loc>
@@ -28,19 +60,6 @@
                 href="https://www.crazykids.tech/zh/tags/devutils/"
                 />
   </url><url>
-    <loc>https://www.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.crazykids.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.crazykids.tech/zh/tags/"
-                />
-  </url><url>
     <loc>https://www.crazykids.tech/zh/posts/timestamps/</loc>
     <lastmod>2025-05-07T22:41:20+08:00</lastmod>
     <xhtml:link
@@ -52,19 +71,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://www.crazykids.tech/zh/posts/timestamps/"
-                />
-  </url><url>
-    <loc>https://www.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-05-07T22:41:20+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.crazykids.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.crazykids.tech/zh/posts/"
                 />
   </url><url>
     <loc>https://www.crazykids.tech/zh/tags/app/</loc>
@@ -221,9 +227,6 @@
   </url><url>
     <loc>https://www.crazykids.tech/zh/tags/blackscreen/</loc>
     <lastmod>2025-03-21T09:43:44+08:00</lastmod>
-  </url><url>
-    <loc>https://www.crazykids.tech/zh/tags/git/</loc>
-    <lastmod>2024-01-06T12:20:23+08:00</lastmod>
   </url><url>
     <loc>https://www.crazykids.tech/zh/posts/git-mirgration/</loc>
     <lastmod>2024-01-06T12:20:23+08:00</lastmod>

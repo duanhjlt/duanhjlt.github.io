@@ -6,7 +6,16 @@
     <description>Recent content in 文章 on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 07 May 2025 22:41:20 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 May 2025 23:04:09 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同一个系统上管理多个github账号</title>
+      <link>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</link>
+      <pubDate>Wed, 07 May 2025 23:04:09 +0800</pubDate>
+      
+      <guid>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</guid>
+      <description>如何在同一个系统上使用ssh方式管理多个github账号？</description>
+    </item>
+    
     <item>
       <title>如何将日期时间转换为Unix时间戳 - 免费工具 | DevUtils</title>
       <link>https://www.crazykids.tech/zh/posts/timestamps/</link>
