@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>devutils on CrazyKids&#39;s Blog</title>
-    <link>https://www.crazykids.tech/en/tags/devutils/</link>
+    <link>https://blog.crazykids.tech/en/tags/devutils/</link>
     <description>Recent content in devutils on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 May 2025 22:41:35 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/en/tags/devutils/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 May 2025 22:41:35 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/en/tags/devutils/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Convert Datetime to Timestamp - Free Tool | DevUtils</title>
-      <link>https://www.crazykids.tech/en/posts/timestamps/</link>
+      <link>https://blog.crazykids.tech/en/posts/timestamps/</link>
       <pubDate>Wed, 07 May 2025 22:41:35 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/en/posts/timestamps/</guid>
+      <guid>https://blog.crazykids.tech/en/posts/timestamps/</guid>
       <description>Free online timestamp converter! Quickly convert datetime to Unix timestamp or timestamp to datetime, supports multiple formats, try now!</description>
     </item>
     

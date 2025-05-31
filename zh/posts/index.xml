@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>文章 on CrazyKids&#39;s Blog</title>
-    <link>https://www.crazykids.tech/zh/posts/</link>
+    <link>https://blog.crazykids.tech/zh/posts/</link>
     <description>Recent content in 文章 on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 07 May 2025 23:04:09 +0800</lastBuildDate><atom:link href="https://www.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 May 2025 23:04:09 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>同一个系统上管理多个github账号</title>
-      <link>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</link>
+      <link>https://blog.crazykids.tech/zh/posts/githubs-on-the-same-os/</link>
       <pubDate>Wed, 07 May 2025 23:04:09 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/githubs-on-the-same-os/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/githubs-on-the-same-os/</guid>
       <description>如何在同一个系统上使用ssh方式管理多个github账号？</description>
     </item>
     
     <item>
       <title>如何将日期时间转换为Unix时间戳 - 免费工具 | DevUtils</title>
-      <link>https://www.crazykids.tech/zh/posts/timestamps/</link>
+      <link>https://blog.crazykids.tech/zh/posts/timestamps/</link>
       <pubDate>Wed, 07 May 2025 22:41:20 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/timestamps/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/timestamps/</guid>
       <description>免费在线时间戳转换工具！快速将日期时间转换为Unix时间戳或时间戳转日期时间，支持多格式，简单易用，立即试用！</description>
     </item>
     
     <item>
       <title>Memora：专为iOS和macOS设计的离线稍后读应用</title>
-      <link>https://www.crazykids.tech/zh/posts/memora/</link>
+      <link>https://blog.crazykids.tech/zh/posts/memora/</link>
       <pubDate>Sat, 12 Apr 2025 22:56:21 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/memora/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/memora/</guid>
       <description>Memora是一款安全可靠的稍后读应用，支持网页离线保存、iCloud同步和无干扰阅读体验。通过标签分类和智能搜索，轻松管理你的阅读清单。</description>
     </item>
     
     <item>
       <title>xvm-windows：Node.js、Go、Python版本管理器</title>
-      <link>https://www.crazykids.tech/zh/posts/xvm-windows/</link>
+      <link>https://blog.crazykids.tech/zh/posts/xvm-windows/</link>
       <pubDate>Fri, 28 Mar 2025 23:21:06 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/xvm-windows/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/xvm-windows/</guid>
       <description>xvm-windows是Windows上的可扩展的版本管理器，支持Node.js、Go和Python。学习使用此开源工具管理多语言版本。</description>
     </item>
     
     <item>
       <title>XVM：Node.js、Go、Python版本管理器X Version Manger</title>
-      <link>https://www.crazykids.tech/zh/posts/xvm/</link>
+      <link>https://blog.crazykids.tech/zh/posts/xvm/</link>
       <pubDate>Fri, 28 Mar 2025 16:00:20 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/xvm/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/xvm/</guid>
       <description>XVM是可扩展的版本管理器，支持Node.js、Go和Python。学习使用此开源工具管理多语言版本。</description>
     </item>
     
     <item>
       <title>Yellow Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/yellow-screen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/yellow-screen/</link>
       <pubDate>Fri, 28 Mar 2025 15:34:46 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/yellow-screen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/yellow-screen/</guid>
       <description>走进 blackscreen.space，感受黄色带来的极致魅力。</description>
     </item>
     
     <item>
       <title>Red Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/red-screen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/red-screen/</link>
       <pubDate>Fri, 28 Mar 2025 15:34:35 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/red-screen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/red-screen/</guid>
       <description>走进 blackscreen.space，感受红色带来的极致魅力。</description>
     </item>
     
     <item>
       <title>Green Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/green-screen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/green-screen/</link>
       <pubDate>Fri, 28 Mar 2025 15:07:04 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/green-screen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/green-screen/</guid>
       <description>走进 blackscreen.space，感受绿色带来的极致魅力。</description>
     </item>
     
     <item>
       <title>Blue Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/blue-screen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/blue-screen/</link>
       <pubDate>Fri, 28 Mar 2025 14:48:01 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/blue-screen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/blue-screen/</guid>
       <description>走进 blackscreen.space，感受蓝色带来的极致魅力。</description>
     </item>
     
     <item>
       <title>饭点儿</title>
-      <link>https://www.crazykids.tech/zh/posts/fan-dian-er/</link>
+      <link>https://blog.crazykids.tech/zh/posts/fan-dian-er/</link>
       <pubDate>Wed, 26 Mar 2025 14:28:50 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/fan-dian-er/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/fan-dian-er/</guid>
       <description>到饭点儿，轻轻一摇推荐附近的餐馆</description>
     </item>
     
     <item>
       <title>White Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/whitescreen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/whitescreen/</link>
       <pubDate>Fri, 21 Mar 2025 09:46:23 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/whitescreen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/whitescreen/</guid>
       <description>走进 blackscreen.space，感受白色带来的极致魅力。</description>
     </item>
     
     <item>
       <title>Black Screen</title>
-      <link>https://www.crazykids.tech/zh/posts/blackscreen/</link>
+      <link>https://blog.crazykids.tech/zh/posts/blackscreen/</link>
       <pubDate>Fri, 21 Mar 2025 09:43:44 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/blackscreen/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/blackscreen/</guid>
       <description>走进 Blackscreen.space，感受黑屏带来的极致魅力。</description>
     </item>
     
     <item>
       <title>Git 仓库迁移</title>
-      <link>https://www.crazykids.tech/zh/posts/git-mirgration/</link>
+      <link>https://blog.crazykids.tech/zh/posts/git-mirgration/</link>
       <pubDate>Sat, 06 Jan 2024 12:20:23 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/git-mirgration/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/git-mirgration/</guid>
       <description>git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。 从仓库 A 迁移到仓库 B 这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： $ git clone --bare http://a.com/crazykids.git $ git push --mirror http://b.com/crazykids.git 从本地直接上传到仓库 B 有的时候需要将本地仓库直接全部 push 到仓库 B，比如仓库 A 真的</description>
     </item>
     
     <item>
       <title>git 分支操作常用命令</title>
-      <link>https://www.crazykids.tech/zh/posts/git_branch/</link>
+      <link>https://blog.crazykids.tech/zh/posts/git_branch/</link>
       <pubDate>Thu, 04 Jan 2024 22:35:39 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/git_branch/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/git_branch/</guid>
       <description>查看所有分支 $ git branch -a 查看远程分支 $ git branch -r 查看本地分支所关联的远程分支 $ git branch -vv 重命名本地分支 $ git branch -m old_branch new_branch 删除远程分支 $ git branch -d -r origin/old_branch $ git push origin :old_branch 推送新的分支 $ git push -u origin new_branch 设置关联 $ git branch --set-upstream-to=origin/branch branch</description>
     </item>
     
     <item>
       <title>Hugo &#43; Github Pages 建站</title>
-      <link>https://www.crazykids.tech/zh/posts/hugo-site/</link>
+      <link>https://blog.crazykids.tech/zh/posts/hugo-site/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
       
-      <guid>https://www.crazykids.tech/zh/posts/hugo-site/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/hugo-site/</guid>
       <description>Hugo 是由 Go 语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。</description>
     </item>
     
