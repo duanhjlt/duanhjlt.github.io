@@ -6,7 +6,16 @@
     <description>Recent content on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 21 Jun 2025 22:35:16 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jun 2025 22:16:00 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthropic：我们如何构建多智能体研究系统</title>
+      <link>https://www.timestamps.top/zh/posts/built-multi-agent-research-system/</link>
+      <pubDate>Mon, 23 Jun 2025 22:16:00 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/built-multi-agent-research-system/</guid>
+      <description>原文：How we built our multi-agent research system 我们如何构建我们的多智能体研究系统 我们的研究（Research）功能使用多个 Claude 代理来更有效地探索复杂主题。我们在此分享构建该系统时遇到的工程挑战以及我们学到的经验教C训。 在许多方面，研究都是大型语言模型（LLM）的理想任务。它奖励那些能够吸收和综合大量文本</description>
+    </item>
+    
     <item>
       <title>OpenAI: 构建 AI 智能体实用指南</title>
       <link>https://www.timestamps.top/zh/posts/a-practical-guide-to-building-agents/</link>

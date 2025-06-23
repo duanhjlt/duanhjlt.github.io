@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.timestamps.top/zh/posts/built-multi-agent-research-system/</loc>
+    <lastmod>2025-06-23T22:16:00+08:00</lastmod>
+  </url><url>
     <loc>https://www.timestamps.top/zh/</loc>
-    <lastmod>2025-06-21T22:35:16+08:00</lastmod>
+    <lastmod>2025-06-23T22:16:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,11 +18,8 @@
                 href="https://www.timestamps.top/zh/"
                 />
   </url><url>
-    <loc>https://www.timestamps.top/zh/posts/a-practical-guide-to-building-agents/</loc>
-    <lastmod>2025-06-21T22:35:16+08:00</lastmod>
-  </url><url>
     <loc>https://www.timestamps.top/zh/posts/</loc>
-    <lastmod>2025-06-21T22:35:16+08:00</lastmod>
+    <lastmod>2025-06-23T22:16:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -30,6 +30,9 @@
                 hreflang="zh"
                 href="https://www.timestamps.top/zh/posts/"
                 />
+  </url><url>
+    <loc>https://www.timestamps.top/zh/posts/a-practical-guide-to-building-agents/</loc>
+    <lastmod>2025-06-21T22:35:16+08:00</lastmod>
   </url><url>
     <loc>https://www.timestamps.top/zh/tags/git/</loc>
     <lastmod>2025-05-07T23:04:09+08:00</lastmod>
