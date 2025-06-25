@@ -6,7 +6,16 @@
     <description>Recent content on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 23 Jun 2025 22:16:00 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jun 2025 23:32:08 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解构Claude Code：其何以在AI编程领域遥遥领先？</title>
+      <link>https://www.timestamps.top/zh/posts/claude-code-secrets/</link>
+      <pubDate>Wed, 25 Jun 2025 23:32:08 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/claude-code-secrets/</guid>
+      <description>在人工智能辅助编程的激烈竞赛中，Anthropic 的 Claude Code 已然成为一匹黑马，其强大的能力使其与竞品（尤其是 OpenAI 的 Codex）拉开了显著差距。这种领先并非源于单一的突破，而是建立在一系列深思熟虑的技术、产品和战略决策之上。以下是对 Claude Code 制胜秘诀的深度解析。 第一部分：铸就 Claude Code 核心竞争力的四</description>
+    </item>
+    
     <item>
       <title>Anthropic：我们如何构建多智能体研究系统</title>
       <link>https://www.timestamps.top/zh/posts/built-multi-agent-research-system/</link>
