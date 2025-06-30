@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.timestamps.top/zh/</loc>
-    <lastmod>2025-06-25T23:32:08+08:00</lastmod>
+    <lastmod>2025-06-30T16:06:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,11 +15,27 @@
                 href="https://www.timestamps.top/zh/"
                 />
   </url><url>
-    <loc>https://www.timestamps.top/zh/posts/claude-code-secrets/</loc>
-    <lastmod>2025-06-25T23:32:08+08:00</lastmod>
+    <loc>https://www.timestamps.top/zh/tags/</loc>
+    <lastmod>2025-06-30T16:06:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.timestamps.top/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://www.timestamps.top/zh/tags/"
+                />
+  </url><url>
+    <loc>https://www.timestamps.top/zh/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2025-06-30T16:06:44+08:00</lastmod>
+  </url><url>
+    <loc>https://www.timestamps.top/zh/posts/the-bitter-lesson/</loc>
+    <lastmod>2025-06-30T16:06:44+08:00</lastmod>
   </url><url>
     <loc>https://www.timestamps.top/zh/posts/</loc>
-    <lastmod>2025-06-25T23:32:08+08:00</lastmod>
+    <lastmod>2025-06-30T16:06:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -31,6 +47,9 @@
                 href="https://www.timestamps.top/zh/posts/"
                 />
   </url><url>
+    <loc>https://www.timestamps.top/zh/posts/claude-code-secrets/</loc>
+    <lastmod>2025-06-25T23:32:08+08:00</lastmod>
+  </url><url>
     <loc>https://www.timestamps.top/zh/posts/built-multi-agent-research-system/</loc>
     <lastmod>2025-06-23T22:16:00+08:00</lastmod>
   </url><url>
@@ -39,19 +58,6 @@
   </url><url>
     <loc>https://www.timestamps.top/zh/tags/git/</loc>
     <lastmod>2025-05-07T23:04:09+08:00</lastmod>
-  </url><url>
-    <loc>https://www.timestamps.top/zh/tags/</loc>
-    <lastmod>2025-05-07T23:04:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.timestamps.top/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://www.timestamps.top/zh/tags/"
-                />
   </url><url>
     <loc>https://www.timestamps.top/zh/posts/githubs-on-the-same-os/</loc>
     <lastmod>2025-05-07T23:04:09+08:00</lastmod>
