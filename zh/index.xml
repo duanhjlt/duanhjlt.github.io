@@ -6,7 +6,16 @@
     <description>Recent content on CrazyKids&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Jun 2025 16:46:38 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jun 2025 17:17:13 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一篇彻底搞懂Unix时间戳：从入门、踩坑到精通</title>
+      <link>https://www.timestamps.top/zh/posts/what-is-timestamp/</link>
+      <pubDate>Mon, 30 Jun 2025 17:17:13 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/what-is-timestamp/</guid>
+      <description>什么是时间戳？ 时间戳（Timestamp）是一个表示特定时间点的数值，通常定义为自Unix纪元（1970年1月1日00:00:00 UTC）以来的秒数或毫秒数。它是计算机系统中记录和处理时间的一种标准方式，广泛应用于编程、数据库、日志系统和通信协议。 秒与毫秒的区别 秒时间戳：以秒为单</description>
+    </item>
+    
     <item>
       <title>人们如何使用 Claude 来获得支持、建议和陪伴</title>
       <link>https://www.timestamps.top/zh/posts/how-people-use-claude-for-support-advice-and-companionship/</link>
