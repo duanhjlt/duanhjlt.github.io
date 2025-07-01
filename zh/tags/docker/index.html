@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head>
-	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>CrazyKids&#39;s Blog</title>
-
+<title>docker | CrazyKids&#39;s Blog</title>
+<meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="duanhongjin">
-<link rel="canonical" href="https://www.timestamps.top/zh/">
+<link rel="canonical" href="https://www.timestamps.top/zh/tags/docker/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.678b5c47efa744d2e0dd0d61101075e6aecdc9a0631e7ad8538f4ec0cca79273.css" integrity="sha256-Z4tcR&#43;&#43;nRNLg3Q1hEBB15q7NyaBjHnrYU49OwMynknM=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.timestamps.top/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.timestamps.top/favicon-16x16.png">
@@ -19,8 +18,7 @@
 <link rel="mask-icon" href="https://www.timestamps.top/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.timestamps.top/zh/index.xml">
-<link rel="alternate" type="application/json" href="https://www.timestamps.top/zh/index.json">
+<link rel="alternate" type="application/rss+xml" href="https://www.timestamps.top/zh/tags/docker/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,28 +67,15 @@ if (!doNotTrack) {
 	
 	ga('send', 'pageview');
 }
-</script><meta property="og:title" content="CrazyKids&#39;s Blog" />
+</script><meta property="og:title" content="docker" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.timestamps.top/zh/" />
+<meta property="og:url" content="https://www.timestamps.top/zh/tags/docker/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CrazyKids&#39;s Blog"/>
+<meta name="twitter:title" content="docker"/>
 <meta name="twitter:description" content=""/>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "CrazyKids's Blog",
-  "url": "https://www.timestamps.top/",
-  "description": "",
-  "thumbnailUrl": "https://www.timestamps.top/favicon.ico",
-  "sameAs": [
-      "https://github.com/duan0120", "https://x.com/alexander_duan", "https://t.me/duanhjlt", "mailto:duanhjlt@gmail.com"
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -179,97 +164,23 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.timestamps.top/zh/">主页</a>&nbsp;»&nbsp;<a href="https://www.timestamps.top/zh/tags/">Tags</a></div>
+  <h1>
+    docker
+  </h1>
+</header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Blue Screen
+    <h2>为 Docker 配置 HTTP/HTTPS 代理
     </h2>
   </header>
   <div class="entry-content">
-    <p>欢迎访问 Blackscreen.space，这里以宁静与灵感为核心。我们相信蓝色能够唤起平静、稳定与高效的感受。 Blue Screen的宁静与激励力量 宁静、安全与秩序 蓝屏让人联想到宁静与平和的情感。蓝色常与安静、安全及秩序感相联系，传递出可靠与稳定的气质。这种颜色不仅令人安心，还能激发信...</p>
+    <p>🔧 1. 确认你的代理本地端口 假设你本地代理端口是： HTTP(S) 代理地址：127.0.0.1:7890（Clash 默认） 或 SOCKS5 代理地址：127.0.0.1:1080（Shadowsocks 默认） 我们以下以 HTTP 代理为例。 🛠️ 2. 创建 Docker 的代理配置文件 sudo mkdir -p /etc/systemd/system/docker.service.d sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf 内容如下 [Service] Environment=&#34;HTTP_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;HTTPS_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,::1&#34; 🔄 3. 重新加载并重启 Docker 服务 sudo...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-28 14:48:01 +0800 CST'>2025-03-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Blue Screen" href="https://www.timestamps.top/zh/posts/blue-screen/"></a>
+  <footer class="entry-footer"><span title='2025-07-01 22:30:06 +0800 CST'>2025-07-01</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 为 Docker 配置 HTTP/HTTPS 代理" href="https://www.timestamps.top/zh/posts/add-proxy-to-docker/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>饭点儿
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>被工作追着跑，吃饭选择别再烧脑！“饭点儿”APP来救场 身为上班族，每天忙碌于工作，本就神经紧绷。可一到中午、晚上这些饭点儿，又要被“吃什么”这个难题折磨。打开外卖软件，菜品繁多，刷来刷去，眼睛都花了，还是毫无头绪，宝贵的午休时间就这样在纠结中流逝。出去觅食吧，面对街边密密麻麻的店...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-26 14:28:50 +0800 CST'>2025-03-26</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to 饭点儿" href="https://www.timestamps.top/zh/posts/fan-dian-er/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>White Screen
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>欢迎访问 Blackscreen.space，这里以纯净而耀眼的白色为核心。我们深信，简洁与清晰是塑造卓越视觉体验的基础。 白屏的力量 纯净清晰的视觉体验 Blackscreen.space 为您呈现白屏的极致美感。作为一块纯净的数字画布，它让您的图像与照片以惊艳的清晰度脱颖而出。无论是复制图片还是开启全新设计，Whit...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-21 09:46:23 +0800 CST'>2025-03-21</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to White Screen" href="https://www.timestamps.top/zh/posts/whitescreen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Black Screen
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Blackscreen.space 是您探索黑色魅力的终极之选。我们坚信，简约与优雅是打造引人入胜视觉体验的核心所在。 Black Screen 的多功能性 无需关闭电源即可调节亮度 Black Screen 的核心功能之一在于，它能够在不完全关闭第二台显示器的情况下实现屏幕变暗。这一特性尤为适合需要在专注游戏或沉浸式电影体验中快速关闭辅助显示器的场景。Blac...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-21 09:43:44 +0800 CST'>2025-03-21</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Black Screen" href="https://www.timestamps.top/zh/posts/blackscreen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Git 仓库迁移
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。 从仓库 A 迁移到仓库 B 这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： $ git clone --bare http://a.com/crazykids.git $ git push --mirror http://b.com/crazykids.git 从本地直接上传到仓库 B 有的时候需要将本地仓库直接全部 push 到仓库 B，比如仓库 A 真的...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-06 12:20:23 +0800 CST'>2024-01-06</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Git 仓库迁移" href="https://www.timestamps.top/zh/posts/git-mirgration/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>git 分支操作常用命令
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>查看所有分支 $ git branch -a 查看远程分支 $ git branch -r 查看本地分支所关联的远程分支 $ git branch -vv 重命名本地分支 $ git branch -m old_branch new_branch 删除远程分支 $ git branch -d -r origin/old_branch $ git push origin :old_branch 推送新的分支 $ git push -u origin new_branch 设置关联 $ git branch --set-upstream-to=origin/branch branch</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-04 22:35:39 +0800 CST'>2024-01-04</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to git 分支操作常用命令" href="https://www.timestamps.top/zh/posts/git_branch/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Hugo &#43; Github Pages 建站
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>00 安装Hugo 到 Hugo Releases 下载对应的操作系统版本的 Hugo 二进制文件 Mac 下可以直接使用 Homebrew 安装： $ brew install hugo 01 生成站点 使用 Hugo 快速生成站点 $ hugo new site /path/to/site 这样就在 /path/to/site 目录里生成了初始站点，进入目录： $ cd /path/to/site 02 安装主题 到 主题列表 挑选主题，找到相关的 GitHub 地址，创建目录 themes, 把主题 clone 下来 $ git clone https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 在配置文件中设置主题名字 theme:...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-25 22:30:34 +0800 CST'>2023-12-25</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Hugo &#43; Github Pages 建站" href="https://www.timestamps.top/zh/posts/hugo-site/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="https://www.timestamps.top/zh/">
-      «&nbsp;上一页&nbsp;
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
