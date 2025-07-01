@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>为 Docker 配置 HTTP/HTTPS 代理 | CrazyKids&#39;s Blog</title>
+<title>为 Docker 配置 HTTP/HTTPS 代理 | TimeStamps</title>
 <meta name="keywords" content="blog">
 <meta name="description" content="🔧 1. 确认你的代理本地端口 假设你本地代理端口是： HTTP(S) 代理地址：127.0.0.1:7890（Clash 默认） 或 SOCKS5 代理地址：127.0.0.1:1080（Shadowsocks 默认） 我们以下以 HTTP 代理为例。 🛠️ 2. 创建 Docker 的代理配置文件 sudo mkdir -p /etc/systemd/system/docker.service.d sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf 内容如下 [Service] Environment=&#34;HTTP_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;HTTPS_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,::1&#34; 🔄 3. 重新加载并重启 Docker 服务 sudo">
 <meta name="author" content="duanhongjin">
@@ -125,7 +125,7 @@ if (!doNotTrack) {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "CrazyKids's Blog",
+    "name": "TimeStamps",
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.timestamps.top/favicon.ico"
@@ -150,7 +150,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.timestamps.top/zh/" accesskey="h" title="CrazyKids&#39;s Blog (Alt + H)">CrazyKids&#39;s Blog</a>
+            <a href="https://www.timestamps.top/zh/" accesskey="h" title="TimeStamps (Alt + H)">TimeStamps</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -366,7 +366,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="https://www.timestamps.top/zh/">CrazyKids&#39;s Blog</a></span>
+    <span>&copy; 2025 <a href="https://www.timestamps.top/zh/">TimeStamps</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
