@@ -172,6 +172,18 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>获取当前时间戳
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Swift NSDate().timeIntervalSince1970 Go import ( &#34;time&#34; ) int64(time.Now().Unix()) Java System.currentTimeMillis() / 1000 C #include &lt;sys/time.h&gt; // ... struct timeval tv; gettimeofday(&amp;tv, NULL); // 秒： tv.tv_sec // 毫秒： tv.tv_sec * 1000LL &#43; tv.tv_usec / 1000 JavaScript Math.round(new Date() / 1000) Objective-C [[NSDate date] timeIntervalSince1970] MySQL SELECT unix_timestamp(now()) SQLite SELECT strftime(&#39;%s&#39;, &#39;now&#39;) Erlang calendar:datetime_to_gregorian_seconds(calendar:universal_time())-719528*24*3600. PHP &lt;?php // pure php time(); Python import time time.time() Ruby Time.now.to_i Shell date &#43;%s Groovy (new Date().time / 1000).longValue() Lua os.time() .NET/C# DateTimeOffset.UtcNow.ToUnixTimeSeconds(); Dart (new DateTime.now().millisecondsSinceEpoch / 1000).truncate()</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-01 22:51:08 +0800 CST'>2025-07-01</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 获取当前时间戳" href="https://www.timestamps.top/zh/posts/get-current-timestamps/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>一篇彻底搞懂Unix时间戳：从入门、踩坑到精通
     </h2>
   </header>

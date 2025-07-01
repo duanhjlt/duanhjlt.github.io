@@ -6,7 +6,25 @@
     <description>Recent content in 文章 on TimeStamps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 01 Jul 2025 22:30:06 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jul 2025 22:51:08 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>获取当前时间戳</title>
+      <link>https://www.timestamps.top/zh/posts/get-current-timestamps/</link>
+      <pubDate>Tue, 01 Jul 2025 22:51:08 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/get-current-timestamps/</guid>
+      <description>Swift NSDate().timeIntervalSince1970 Go import ( &amp;#34;time&amp;#34; ) int64(time.Now().Unix()) Java System.currentTimeMillis() / 1000 C #include &amp;lt;sys/time.h&amp;gt; // ... struct timeval tv; gettimeofday(&amp;amp;tv, NULL); // 秒： tv.tv_sec // 毫秒： tv.tv_sec * 1000LL + tv.tv_usec / 1000 JavaScript Math.round(new Date() / 1000) Objective-C [[NSDate date] timeIntervalSince1970] MySQL SELECT unix_timestamp(now()) SQLite SELECT strftime(&amp;#39;%s&amp;#39;, &amp;#39;now&amp;#39;) Erlang calendar:datetime_to_gregorian_seconds(calendar:universal_time())-719528*24*3600. PHP &amp;lt;?php // pure php time(); Python import time time.time() Ruby Time.now.to_i Shell date +%s Groovy (new Date().time / 1000).longValue() Lua os.time() .NET/C# DateTimeOffset.UtcNow.ToUnixTimeSeconds(); Dart (new DateTime.now().millisecondsSinceEpoch / 1000).truncate()</description>
+    </item>
+    
+    <item>
+      <title>在uos（统信）系统上设置initramfs</title>
+      <link>https://www.timestamps.top/zh/posts/how-to-set-initramfs-on-uos/</link>
+      <pubDate>Tue, 01 Jul 2025 22:44:59 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/how-to-set-initramfs-on-uos/</guid>
+      <description>以lsm驱动test_lsm.ko为例</description>
+    </item>
+    
     <item>
       <title>为 Docker 配置 HTTP/HTTPS 代理</title>
       <link>https://www.timestamps.top/zh/posts/add-proxy-to-docker/</link>

@@ -187,6 +187,30 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>获取当前时间戳
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Swift NSDate().timeIntervalSince1970 Go import ( &#34;time&#34; ) int64(time.Now().Unix()) Java System.currentTimeMillis() / 1000 C #include &lt;sys/time.h&gt; // ... struct timeval tv; gettimeofday(&amp;tv, NULL); // 秒： tv.tv_sec // 毫秒： tv.tv_sec * 1000LL &#43; tv.tv_usec / 1000 JavaScript Math.round(new Date() / 1000) Objective-C [[NSDate date] timeIntervalSince1970] MySQL SELECT unix_timestamp(now()) SQLite SELECT strftime(&#39;%s&#39;, &#39;now&#39;) Erlang calendar:datetime_to_gregorian_seconds(calendar:universal_time())-719528*24*3600. PHP &lt;?php // pure php time(); Python import time time.time() Ruby Time.now.to_i Shell date &#43;%s Groovy (new Date().time / 1000).longValue() Lua os.time() .NET/C# DateTimeOffset.UtcNow.ToUnixTimeSeconds(); Dart (new DateTime.now().millisecondsSinceEpoch / 1000).truncate()</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-01 22:51:08 +0800 CST'>2025-07-01</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 获取当前时间戳" href="https://www.timestamps.top/zh/posts/get-current-timestamps/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>在uos（统信）系统上设置initramfs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>将驱动放到响应的目录，并更新模块依赖 sudo cp test_lsm.ko /lib/modules/4.19.0-arm64-desktop/kernel/security/test_lsm/ sudo depmod -a 4.19.0-arm64-desktop 将模块添加到 initramfs 编辑 initramfs 的模块配置文件 sudo vim /etc/initramfs-tools/modules 在文件末尾增加模块名称(不含.ko后缀) test_lsm 更新initramfs sudo update-initramfs -u -k 4.19.0-arm64-desktop 更新GRUB配置 sudo update-grub 重启 sudo reboot</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-01 22:44:59 +0800 CST'>2025-07-01</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 在uos（统信）系统上设置initramfs" href="https://www.timestamps.top/zh/posts/how-to-set-initramfs-on-uos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>为 Docker 配置 HTTP/HTTPS 代理
     </h2>
   </header>
@@ -339,30 +363,6 @@ if (!doNotTrack) {
   </div>
   <footer class="entry-footer"><span title='2025-03-28 15:34:46 +0800 CST'>2025-03-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
   <a class="entry-link" aria-label="post link to Yellow Screen" href="https://www.timestamps.top/zh/posts/yellow-screen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Red Screen
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>欢迎访问 Blackscreen.space，这里以红色的动态与迷人魅力为核心。我们深知红色是一种引人注目的色彩，承载着丰富的含义与联想。Blackscreen.space 致力于打造以红屏为核心的多功能平台，从激发强烈情感与活力到优化视觉效果，为您的数字生活注入无限可能。 红屏的心理...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-28 15:34:35 +0800 CST'>2025-03-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Red Screen" href="https://www.timestamps.top/zh/posts/red-screen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Green Screen
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>绿屏的舒缓与放松魅力 连接自然之美 绿色是大自然的象征，对我们的内心平静与纯净感有着深远影响。在融入绿色元素的环境中，人们往往感到更加放松与自在。公共场所、餐厅和酒店常通过设计、家具及植物引入绿色元素。借助 Blackscreen.space 的绿屏，您可以将自然的舒缓气息融入数字空间。 减压与提升专注力 凝视绿色——无论...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-28 15:07:04 +0800 CST'>2025-03-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to Green Screen" href="https://www.timestamps.top/zh/posts/green-screen/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
