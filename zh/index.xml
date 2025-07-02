@@ -6,7 +6,25 @@
     <description>Recent content on TimeStamps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 01 Jul 2025 22:51:08 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jul 2025 22:09:04 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>时间戳转日期时间</title>
+      <link>https://www.timestamps.top/zh/posts/how-to-convert-timestamp-to-date/</link>
+      <pubDate>Wed, 02 Jul 2025 22:09:04 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/how-to-convert-timestamp-to-date/</guid>
+      <description>Swift let timestamp = 1624713600.0 // 示例时间戳 let date = NSDate(timeIntervalSince1970: timestamp) Go import ( &amp;#34;time&amp;#34; ) timestamp := int64(1624713600) // 示例时间戳 t := time.Unix(timestamp, 0) Java long timestamp = 1624713600; // 示例时间戳 java.util.Date date = new java.util.Date(timestamp * 1000); C #include &amp;lt;time.h&amp;gt; time_t timestamp = 1624713600; // 示例时间戳 struct tm *timeinfo = localtime(&amp;amp;timestamp); // 或者使用 gmtime(&amp;amp;timestamp) 获取 UTC 时间 JavaScript const timestamp = 1624713600; // 示例时间戳 const date = new Date(timestamp * 1000); Objective-C NSTimeInterval timestamp = 1624713600; // 示例时间戳 NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp]; MySQL SELECT from_unixtime(1624713600) SQLite SELECT datetime(1624713600, &amp;#39;unixepoch&amp;#39;) Erlang Timestamp = 1624713600, % 示例时间戳 Datetime = calendar:gregorian_seconds_to_datetime(Timestamp + 719528*24*3600). PHP &amp;lt;?php //</description>
+    </item>
+    
+    <item>
+      <title>日期时间转时间戳</title>
+      <link>https://www.timestamps.top/zh/posts/how-to-convert-date-to-timestamp/</link>
+      <pubDate>Wed, 02 Jul 2025 22:04:40 +0800</pubDate>
+      
+      <guid>https://www.timestamps.top/zh/posts/how-to-convert-date-to-timestamp/</guid>
+      <description>Swift let date = NSDate() // 任意时间对象 let timestamp = date.timeIntervalSince1970 Go import ( &amp;#34;time&amp;#34; ) t := time.Now() // 任意时间对象 timestamp := t.Unix() Java java.util.Date date = new java.util.Date(); // 任意时间对象 long timestamp = date.getTime() / 1000; C #include &amp;lt;time.h&amp;gt; time_t t = time(NULL); // 任意时间对象 long timestamp = (long)t; JavaScript const date = new Date(); // 任意时间对象 const timestamp = Math.round(date.getTime() / 1000); Objective-C NSDate *date = [NSDate date]; // 任意时间对象 NSTimeInterval timestamp = [date timeIntervalSince1970]; MySQL SELECT unix_timestamp(&amp;#39;2021-06-26 12:00:00&amp;#39;) // 任意时间 SQLite SELECT strftime(&amp;#39;%s&amp;#39;, &amp;#39;2021-06-26 12:00:00&amp;#39;) // 任意时间 Erlang Datetime = calendar:universal_time(), % 任意时间 Timestamp = calendar:datetime_to_gregorian_seconds(Datetime) -</description>
+    </item>
+    
     <item>
       <title>获取当前时间戳</title>
       <link>https://www.timestamps.top/zh/posts/get-current-timestamps/</link>

@@ -172,6 +172,30 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>时间戳转日期时间
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Swift let timestamp = 1624713600.0 // 示例时间戳 let date = NSDate(timeIntervalSince1970: timestamp) Go import ( &#34;time&#34; ) timestamp := int64(1624713600) // 示例时间戳 t := time.Unix(timestamp, 0) Java long timestamp = 1624713600; // 示例时间戳 java.util.Date date = new java.util.Date(timestamp * 1000); C #include &lt;time.h&gt; time_t timestamp = 1624713600; // 示例时间戳 struct tm *timeinfo = localtime(&amp;timestamp); // 或者使用 gmtime(&amp;timestamp) 获取 UTC 时间 JavaScript const timestamp = 1624713600; // 示例时间戳 const date = new Date(timestamp * 1000); Objective-C NSTimeInterval timestamp = 1624713600; // 示例时间戳 NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp]; MySQL SELECT from_unixtime(1624713600) SQLite SELECT datetime(1624713600, &#39;unixepoch&#39;) Erlang Timestamp = 1624713600, % 示例时间戳 Datetime = calendar:gregorian_seconds_to_datetime(Timestamp &#43; 719528*24*3600). PHP &lt;?php //...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 22:09:04 +0800 CST'>2025-07-02</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 时间戳转日期时间" href="https://www.timestamps.top/zh/posts/how-to-convert-timestamp-to-date/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>日期时间转时间戳
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Swift let date = NSDate() // 任意时间对象 let timestamp = date.timeIntervalSince1970 Go import ( &#34;time&#34; ) t := time.Now() // 任意时间对象 timestamp := t.Unix() Java java.util.Date date = new java.util.Date(); // 任意时间对象 long timestamp = date.getTime() / 1000; C #include &lt;time.h&gt; time_t t = time(NULL); // 任意时间对象 long timestamp = (long)t; JavaScript const date = new Date(); // 任意时间对象 const timestamp = Math.round(date.getTime() / 1000); Objective-C NSDate *date = [NSDate date]; // 任意时间对象 NSTimeInterval timestamp = [date timeIntervalSince1970]; MySQL SELECT unix_timestamp(&#39;2021-06-26 12:00:00&#39;) // 任意时间 SQLite SELECT strftime(&#39;%s&#39;, &#39;2021-06-26 12:00:00&#39;) // 任意时间 Erlang Datetime = calendar:universal_time(), % 任意时间 Timestamp = calendar:datetime_to_gregorian_seconds(Datetime) -...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 22:04:40 +0800 CST'>2025-07-02</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 日期时间转时间戳" href="https://www.timestamps.top/zh/posts/how-to-convert-date-to-timestamp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>获取当前时间戳
     </h2>
   </header>
