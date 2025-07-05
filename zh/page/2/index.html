@@ -182,6 +182,18 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>同一个系统上管理多个github账号
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有不少人拥有多个github账号，比如个人账号，用户开源的账号。那如何在同一台电脑上管理多个github账号呢？ 1. 使用https方式 git clone https://duanhjlt@github.com/duanhjlt/blog.git git clone https://duan0120@github.com/duan0120/xvm.git 2. 使用ssh方式 2.1 创建ssh key ssh-keygen -t ed25519 -C &#34;duanhjlt@163.com&#34; -f ~/.ssh/id_ed25519_github1 ssh-keygen -t ed25519 -C &#34;duanhjlt@gmail.com&#34; -f ~/.ssh/id_ed25519_github2 2.2 将ssh公钥添加到对应的github账号 2.3 设置ssh 2.3.1 设置配置文件 # ~/.ssh/config Host github.com HostName...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-07 23:04:09 +0800 CST'>2025-05-07</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
+  <a class="entry-link" aria-label="post link to 同一个系统上管理多个github账号" href="https://www.timestamps.top/zh/posts/githubs-on-the-same-os/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>如何将日期时间转换为Unix时间戳 - 免费工具 | DevUtils
     </h2>
   </header>
