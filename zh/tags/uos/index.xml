@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>uos on TimeStamps</title>
-    <link>https://www.timestamps.top/zh/tags/uos/</link>
+    <link>https://www.timestamps.top/zh/zh/tags/uos/</link>
     <description>Recent content in uos on TimeStamps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 01 Jul 2025 22:44:59 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/tags/uos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jul 2025 22:44:59 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/zh/tags/uos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在uos（统信）系统上设置initramfs</title>
-      <link>https://www.timestamps.top/zh/posts/how-to-set-initramfs-on-uos/</link>
+      <link>https://www.timestamps.top/zh/zh/posts/how-to-set-initramfs-on-uos/</link>
       <pubDate>Tue, 01 Jul 2025 22:44:59 +0800</pubDate>
       
-      <guid>https://www.timestamps.top/zh/posts/how-to-set-initramfs-on-uos/</guid>
+      <guid>https://www.timestamps.top/zh/zh/posts/how-to-set-initramfs-on-uos/</guid>
       <description>以lsm驱动test_lsm.ko为例</description>
     </item>
     
