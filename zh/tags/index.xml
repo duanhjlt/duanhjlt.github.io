@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on TimeStamps</title>
+    <title>Tags on 我的碎碎念</title>
     <link>/zh/tags/</link>
-    <description>Recent content in Tags on TimeStamps</description>
+    <description>Recent content in Tags on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 10 Jul 2025 23:12:09 +0800</lastBuildDate><atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jul 2025 22:11:49 +0800</lastBuildDate><atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>devutils</title>
       <link>/zh/tags/devutils/</link>
-      <pubDate>Thu, 10 Jul 2025 23:12:09 +0800</pubDate>
+      <pubDate>Sat, 05 Jul 2025 22:11:49 +0800</pubDate>
       
       <guid>/zh/tags/devutils/</guid>
       <description></description>

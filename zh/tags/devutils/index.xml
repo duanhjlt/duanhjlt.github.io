@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>devutils on TimeStamps</title>
+    <title>devutils on 我的碎碎念</title>
     <link>/zh/tags/devutils/</link>
-    <description>Recent content in devutils on TimeStamps</description>
+    <description>Recent content in devutils on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 10 Jul 2025 23:12:09 +0800</lastBuildDate><atom:link href="/zh/tags/devutils/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Twitter Video Formats Explained: MP4, GIF, and More</title>
-      <link>/zh/posts/twitter-video-formats/</link>
-      <pubDate>Thu, 10 Jul 2025 23:12:09 +0800</pubDate>
-      
-      <guid>/zh/posts/twitter-video-formats/</guid>
-      <description>When downloading videos from Twitter, you&amp;#39;ll encounter various formats. Understanding these formats helps you choose the best option for your specific needs. This guide breaks down everything you need to know about Twitter video formats.&amp;#39;</description>
-    </item>
-    
-    <item>
-      <title>Download Twitter Video Free Online</title>
-      <link>/zh/posts/twitter-x-video/</link>
-      <pubDate>Sun, 06 Jul 2025 22:48:44 +0800</pubDate>
-      
-      <guid>/zh/posts/twitter-x-video/</guid>
-      <description>Download Twitter videos &amp;amp; media free with TwitterXVideo. No signup needed, supports MP4/HD for iPhone &amp;amp; Android. Fast, easy Twitter video downloader.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 05 Jul 2025 22:11:49 +0800</lastBuildDate><atom:link href="/zh/tags/devutils/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TwitterXVideo</title>
       <link>/zh/posts/download-twitter-video/</link>

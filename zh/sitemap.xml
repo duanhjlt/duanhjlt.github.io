@@ -2,26 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/zh/tags/devutils/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-  </url><url>
-    <loc>/zh/tags/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-  </url><url>
-    <loc>/zh/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-  </url><url>
-    <loc>/zh/posts/twitter-video-formats/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-  </url><url>
-    <loc>/zh/posts/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-  </url><url>
     <loc>/zh/posts/i-delete-my-second-brain/</loc>
     <lastmod>2025-07-07T21:56:02+08:00</lastmod>
   </url><url>
-    <loc>/zh/posts/twitter-x-video/</loc>
-    <lastmod>2025-07-06T22:48:44+08:00</lastmod>
+    <loc>/zh/posts/</loc>
+    <lastmod>2025-07-07T21:56:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/"
+                />
+  </url><url>
+    <loc>/zh/</loc>
+    <lastmod>2025-07-07T21:56:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/"
+                />
+  </url><url>
+    <loc>/zh/tags/devutils/</loc>
+    <lastmod>2025-07-05T22:11:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/devutils/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/devutils/"
+                />
+  </url><url>
+    <loc>/zh/tags/</loc>
+    <lastmod>2025-07-05T22:11:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/"
+                />
   </url><url>
     <loc>/zh/posts/download-twitter-video/</loc>
     <lastmod>2025-07-05T22:11:49+08:00</lastmod>
@@ -94,48 +128,168 @@
   </url><url>
     <loc>/zh/posts/timestamps/</loc>
     <lastmod>2025-05-07T22:41:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/timestamps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/timestamps/"
+                />
   </url><url>
     <loc>/zh/tags/app/</loc>
     <lastmod>2025-04-12T22:56:21+08:00</lastmod>
   </url><url>
     <loc>/zh/posts/memora/</loc>
     <lastmod>2025-04-12T22:56:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/memora/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/memora/"
+                />
   </url><url>
     <loc>/zh/tags/xvm/</loc>
     <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/xvm/"
+                />
   </url><url>
     <loc>/zh/posts/xvm-windows/</loc>
     <lastmod>2025-03-28T23:21:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/xvm-windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/xvm-windows/"
+                />
   </url><url>
     <loc>/zh/posts/xvm/</loc>
     <lastmod>2025-03-28T16:00:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/xvm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/xvm/"
+                />
   </url><url>
     <loc>/zh/tags/blackscreen.space/</loc>
     <lastmod>2025-03-28T15:34:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/blackscreen.space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/blackscreen.space/"
+                />
   </url><url>
     <loc>/zh/posts/yellow-screen/</loc>
     <lastmod>2025-03-28T15:34:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/yellow-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/yellow-screen/"
+                />
   </url><url>
     <loc>/zh/posts/red-screen/</loc>
     <lastmod>2025-03-28T15:34:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/red-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/red-screen/"
+                />
   </url><url>
     <loc>/zh/posts/green-screen/</loc>
     <lastmod>2025-03-28T15:07:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/green-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/green-screen/"
+                />
   </url><url>
     <loc>/zh/posts/blue-screen/</loc>
     <lastmod>2025-03-28T14:48:01+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/blue-screen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/blue-screen/"
+                />
   </url><url>
     <loc>/zh/posts/fan-dian-er/</loc>
     <lastmod>2025-03-26T14:28:50+08:00</lastmod>
   </url><url>
     <loc>/zh/posts/whitescreen/</loc>
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/whitescreen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/whitescreen/"
+                />
   </url><url>
     <loc>/zh/tags/whitescreen/</loc>
     <lastmod>2025-03-21T09:46:23+08:00</lastmod>
   </url><url>
     <loc>/zh/posts/blackscreen/</loc>
     <lastmod>2025-03-21T09:43:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/blackscreen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/posts/blackscreen/"
+                />
   </url><url>
     <loc>/zh/tags/blackscreen/</loc>
     <lastmod>2025-03-21T09:43:44+08:00</lastmod>
@@ -154,14 +308,54 @@
   </url><url>
     <loc>/zh/about/</loc>
     <lastmod>2023-12-03T10:54:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/about/"
+                />
   </url><url>
     <loc>/zh/privacy/</loc>
     <lastmod>2023-12-03T10:54:00+08:00</lastmod>
   </url><url>
     <loc>/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/categories/"
+                />
   </url><url>
     <loc>/zh/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/series/"
+                />
   </url><url>
     <loc>/zh/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/search/"
+                />
   </url>
 </urlset>
