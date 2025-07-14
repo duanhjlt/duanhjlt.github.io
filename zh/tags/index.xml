@@ -2,125 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 我的碎碎念</title>
-    <link>https://blog.crazykids.tech/zh/tags/</link>
+    <link>/zh/tags/</link>
     <description>Recent content in Tags on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 05 Jul 2025 22:11:49 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jul 2025 22:11:49 +0800</lastBuildDate><atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>devutils</title>
-      <link>https://blog.crazykids.tech/zh/tags/devutils/</link>
+      <link>/zh/tags/devutils/</link>
       <pubDate>Sat, 05 Jul 2025 22:11:49 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/devutils/</guid>
+      <guid>/zh/tags/devutils/</guid>
       <description></description>
     </item>
     
     <item>
       <title>seo</title>
-      <link>https://blog.crazykids.tech/zh/tags/seo/</link>
+      <link>/zh/tags/seo/</link>
       <pubDate>Thu, 03 Jul 2025 11:14:13 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/seo/</guid>
+      <guid>/zh/tags/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>书籍</title>
-      <link>https://blog.crazykids.tech/zh/tags/%E4%B9%A6%E7%B1%8D/</link>
+      <link>/zh/tags/%E4%B9%A6%E7%B1%8D/</link>
       <pubDate>Thu, 03 Jul 2025 11:14:13 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/%E4%B9%A6%E7%B1%8D/</guid>
+      <guid>/zh/tags/%E4%B9%A6%E7%B1%8D/</guid>
       <description></description>
     </item>
     
     <item>
       <title>uos</title>
-      <link>https://blog.crazykids.tech/zh/tags/uos/</link>
+      <link>/zh/tags/uos/</link>
       <pubDate>Tue, 01 Jul 2025 22:44:59 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/uos/</guid>
+      <guid>/zh/tags/uos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://blog.crazykids.tech/zh/tags/docker/</link>
+      <link>/zh/tags/docker/</link>
       <pubDate>Tue, 01 Jul 2025 22:30:06 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/docker/</guid>
+      <guid>/zh/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>翻译</title>
-      <link>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</link>
+      <link>/zh/tags/%E7%BF%BB%E8%AF%91/</link>
       <pubDate>Mon, 30 Jun 2025 16:46:38 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</guid>
+      <guid>/zh/tags/%E7%BF%BB%E8%AF%91/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://blog.crazykids.tech/zh/tags/git/</link>
+      <link>/zh/tags/git/</link>
       <pubDate>Wed, 07 May 2025 23:04:09 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/git/</guid>
+      <guid>/zh/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>app</title>
-      <link>https://blog.crazykids.tech/zh/tags/app/</link>
+      <link>/zh/tags/app/</link>
       <pubDate>Sat, 12 Apr 2025 22:56:21 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/app/</guid>
+      <guid>/zh/tags/app/</guid>
       <description></description>
     </item>
     
     <item>
       <title>xvm</title>
-      <link>https://blog.crazykids.tech/zh/tags/xvm/</link>
+      <link>/zh/tags/xvm/</link>
       <pubDate>Fri, 28 Mar 2025 23:21:06 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/xvm/</guid>
+      <guid>/zh/tags/xvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blackscreen.space</title>
-      <link>https://blog.crazykids.tech/zh/tags/blackscreen.space/</link>
+      <link>/zh/tags/blackscreen.space/</link>
       <pubDate>Fri, 28 Mar 2025 15:34:46 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/blackscreen.space/</guid>
+      <guid>/zh/tags/blackscreen.space/</guid>
       <description></description>
     </item>
     
     <item>
       <title>whitescreen</title>
-      <link>https://blog.crazykids.tech/zh/tags/whitescreen/</link>
+      <link>/zh/tags/whitescreen/</link>
       <pubDate>Fri, 21 Mar 2025 09:46:23 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/whitescreen/</guid>
+      <guid>/zh/tags/whitescreen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blackscreen</title>
-      <link>https://blog.crazykids.tech/zh/tags/blackscreen/</link>
+      <link>/zh/tags/blackscreen/</link>
       <pubDate>Fri, 21 Mar 2025 09:43:44 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/blackscreen/</guid>
+      <guid>/zh/tags/blackscreen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://blog.crazykids.tech/zh/tags/hugo/</link>
+      <link>/zh/tags/hugo/</link>
       <pubDate>Mon, 25 Dec 2023 22:30:34 +0800</pubDate>
       
-      <guid>https://blog.crazykids.tech/zh/tags/hugo/</guid>
+      <guid>/zh/tags/hugo/</guid>
       <description></description>
     </item>
     
