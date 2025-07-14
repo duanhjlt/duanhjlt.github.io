@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="duanhongjin">
-<link rel="canonical" href="/zh/tags/docker/">
+<link rel="canonical" href="https://blog.crazykids.tech/zh/tags/docker/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.678b5c47efa744d2e0dd0d61101075e6aecdc9a0631e7ad8538f4ec0cca79273.css" integrity="sha256-Z4tcR&#43;&#43;nRNLg3Q1hEBB15q7NyaBjHnrYU49OwMynknM=" rel="preload stylesheet" as="style">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<link rel="icon" href="https://blog.crazykids.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.crazykids.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.crazykids.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.crazykids.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.crazykids.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/zh/tags/docker/index.xml">
-<link rel="alternate" hreflang="zh" href="/zh/tags/docker/">
+<link rel="alternate" type="application/rss+xml" href="https://blog.crazykids.tech/zh/tags/docker/index.xml">
+<link rel="alternate" hreflang="zh" href="https://blog.crazykids.tech/zh/tags/docker/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,7 +71,7 @@ if (!doNotTrack) {
 </script><meta property="og:title" content="docker" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/zh/tags/docker/" />
+<meta property="og:url" content="https://blog.crazykids.tech/zh/tags/docker/" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="docker"/>
@@ -94,7 +94,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="/zh/" accesskey="h" title="我的碎碎念 (Alt + H)">我的碎碎念</a>
+            <a href="https://blog.crazykids.tech/zh/" accesskey="h" title="我的碎碎念 (Alt + H)">我的碎碎念</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -118,7 +118,7 @@ if (!doNotTrack) {
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="/en/" title="English"
+                        <a href="https://blog.crazykids.tech/en/" title="English"
                             aria-label="English">English</a>
                     </li>
                 </ul>
@@ -126,17 +126,17 @@ if (!doNotTrack) {
         </div>
         <ul id="menu">
             <li>
-                <a href="/zh/posts/" title="文章">
+                <a href="https://blog.crazykids.tech/zh/posts/" title="文章">
                     <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="/zh/tags/" title="标签">
+                <a href="https://blog.crazykids.tech/zh/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="zh/categories/" title="分类">
+                <a href="https://blog.crazykids.tech/zh/categories/" title="分类">
                     <span>分类</span>
                 </a>
             </li>
@@ -163,12 +163,12 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
-                <a href="/zh/about/" title="关于">
+                <a href="https://blog.crazykids.tech/zh/about/" title="关于">
                     <span>关于</span>
                 </a>
             </li>
             <li>
-                <a href="/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                <a href="https://blog.crazykids.tech/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
                     <span>搜索</span>
                 </a>
             </li>
@@ -176,7 +176,7 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="/zh/">主页</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://blog.crazykids.tech/zh/">主页</a>&nbsp;»&nbsp;<a href="https://blog.crazykids.tech/zh/tags/">Tags</a></div>
   <h1>
     docker
   </h1>
@@ -191,12 +191,12 @@ if (!doNotTrack) {
     <p>🔧 1. 确认你的代理本地端口 假设你本地代理端口是： HTTP(S) 代理地址：127.0.0.1:7890（Clash 默认） 或 SOCKS5 代理地址：127.0.0.1:1080（Shadowsocks 默认） 我们以下以 HTTP 代理为例。 🛠️ 2. 创建 Docker 的代理配置文件 sudo mkdir -p /etc/systemd/system/docker.service.d sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf 内容如下 [Service] Environment=&#34;HTTP_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;HTTPS_PROXY=http://127.0.0.1:7890&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,::1&#34; 🔄 3. 重新加载并重启 Docker 服务 sudo...</p>
   </div>
   <footer class="entry-footer"><span title='2025-07-01 22:30:06 +0800 CST'>2025-07-01</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;duanhongjin</footer>
-  <a class="entry-link" aria-label="post link to 为 Docker 配置 HTTP/HTTPS 代理" href="/zh/posts/add-proxy-to-docker/"></a>
+  <a class="entry-link" aria-label="post link to 为 Docker 配置 HTTP/HTTPS 代理" href="https://blog.crazykids.tech/zh/posts/add-proxy-to-docker/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="/zh/">我的碎碎念</a></span>
+    <span>&copy; 2025 <a href="https://blog.crazykids.tech/zh/">我的碎碎念</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

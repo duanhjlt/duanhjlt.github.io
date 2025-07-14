@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 我的碎碎念</title>
-    <link>/en/tags/</link>
+    <link>https://blog.crazykids.tech/en/tags/</link>
     <description>Recent content in Tags on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jul 2025 23:12:09 +0800</lastBuildDate><atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jul 2025 23:12:09 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>devutils</title>
-      <link>/en/tags/devutils/</link>
+      <link>https://blog.crazykids.tech/en/tags/devutils/</link>
       <pubDate>Thu, 10 Jul 2025 23:12:09 +0800</pubDate>
       
-      <guid>/en/tags/devutils/</guid>
+      <guid>https://blog.crazykids.tech/en/tags/devutils/</guid>
       <description></description>
     </item>
     
     <item>
       <title>xvm</title>
-      <link>/en/tags/xvm/</link>
+      <link>https://blog.crazykids.tech/en/tags/xvm/</link>
       <pubDate>Fri, 28 Mar 2025 23:21:09 +0800</pubDate>
       
-      <guid>/en/tags/xvm/</guid>
+      <guid>https://blog.crazykids.tech/en/tags/xvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blackscreen.space</title>
-      <link>/en/tags/blackscreen.space/</link>
+      <link>https://blog.crazykids.tech/en/tags/blackscreen.space/</link>
       <pubDate>Fri, 28 Mar 2025 15:34:48 +0800</pubDate>
       
-      <guid>/en/tags/blackscreen.space/</guid>
+      <guid>https://blog.crazykids.tech/en/tags/blackscreen.space/</guid>
       <description></description>
     </item>
     
