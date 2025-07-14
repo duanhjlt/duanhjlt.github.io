@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on TimeStamps</title>
-    <link>https://www.timestamps.top/zh/series/</link>
+    <link>/zh/series/</link>
     <description>Recent content in Series on TimeStamps</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="https://www.timestamps.top/zh/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language><atom:link href="/zh/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -9,15 +9,15 @@
 <meta name="keywords" content="blog">
 <meta name="description" content="什么是时间戳？ 时间戳（Timestamp）是一个表示特定时间点的数值，通常定义为自Unix纪元（1970年1月1日00:00:00 UTC）以来的秒数或毫秒数。它是计算机系统中记录和处理时间的一种标准方式，广泛应用于编程、数据库、日志系统和通信协议。 秒与毫秒的区别 秒时间戳：以秒为单">
 <meta name="author" content="duanhongjin">
-<link rel="canonical" href="https://www.timestamps.top/zh/posts/what-is-timestamp/">
+<link rel="canonical" href="/zh/posts/what-is-timestamp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.678b5c47efa744d2e0dd0d61101075e6aecdc9a0631e7ad8538f4ec0cca79273.css" integrity="sha256-Z4tcR&#43;&#43;nRNLg3Q1hEBB15q7NyaBjHnrYU49OwMynknM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://www.timestamps.top/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.timestamps.top/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.timestamps.top/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.timestamps.top/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.timestamps.top/safari-pinned-tab.svg">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -71,7 +71,7 @@ if (!doNotTrack) {
 </script><meta property="og:title" content="一篇彻底搞懂Unix时间戳：从入门、踩坑到精通" />
 <meta property="og:description" content="什么是时间戳？ 时间戳（Timestamp）是一个表示特定时间点的数值，通常定义为自Unix纪元（1970年1月1日00:00:00 UTC）以来的秒数或毫秒数。它是计算机系统中记录和处理时间的一种标准方式，广泛应用于编程、数据库、日志系统和通信协议。 秒与毫秒的区别 秒时间戳：以秒为单" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.timestamps.top/zh/posts/what-is-timestamp/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/zh/posts/what-is-timestamp/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-06-30T17:17:13+08:00" />
 <meta property="article:modified_time" content="2025-06-30T17:17:13+08:00" />
 
@@ -84,18 +84,12 @@ if (!doNotTrack) {
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
-      "name": "文章",
-      "item": "https://www.timestamps.top/zh/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
+      "position":  4 ,
       "name": "一篇彻底搞懂Unix时间戳：从入门、踩坑到精通",
-      "item": "https://www.timestamps.top/zh/posts/what-is-timestamp/"
+      "item": "/zh/posts/what-is-timestamp/"
     }
   ]
 }
@@ -121,14 +115,14 @@ if (!doNotTrack) {
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.timestamps.top/zh/posts/what-is-timestamp/"
+    "@id": "/zh/posts/what-is-timestamp/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "TimeStamps",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.timestamps.top/favicon.ico"
+      "url": "favicon.ico"
     }
   }
 }
@@ -150,7 +144,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.timestamps.top/zh/" accesskey="h" title="TimeStamps (Alt + H)">TimeStamps</a>
+            <a href="zh/" accesskey="h" title="TimeStamps (Alt + H)">TimeStamps</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -176,17 +170,17 @@ if (!doNotTrack) {
         </div>
         <ul id="menu">
             <li>
-                <a href="https://www.timestamps.top/zh/posts/" title="文章">
+                <a href="/zh/posts/" title="文章">
                     <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.timestamps.top/zh/tags/" title="标签">
+                <a href="/zh/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.timestamps.top/zh/categories/" title="分类">
+                <a href="zh/categories/" title="分类">
                     <span>分类</span>
                 </a>
             </li>
@@ -213,12 +207,12 @@ if (!doNotTrack) {
                 </a>
             </li>
             <li>
-                <a href="https://www.timestamps.top/zh/about/" title="关于">
+                <a href="/zh/about/" title="关于">
                     <span>关于</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.timestamps.top/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                <a href="/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
                     <span>搜索</span>
                 </a>
             </li>
@@ -229,7 +223,7 @@ if (!doNotTrack) {
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.timestamps.top/zh/">主页</a>&nbsp;»&nbsp;<a href="https://www.timestamps.top/zh/posts/">文章</a></div>
+    <div class="breadcrumbs"><a href="zh/">主页</a></div>
     <h1 class="post-title">
       一篇彻底搞懂Unix时间戳：从入门、踩坑到精通
     </h1>
@@ -436,15 +430,15 @@ if (!doNotTrack) {
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.timestamps.top/zh/tags/devutils/">devutils</a></li>
+      <li><a href="/zh/tags/devutils/">devutils</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.timestamps.top/zh/posts/add-proxy-to-docker/">
+  <a class="prev" href="/zh/posts/add-proxy-to-docker/">
     <span class="title">« 上一页</span>
     <br>
     <span>为 Docker 配置 HTTP/HTTPS 代理</span>
   </a>
-  <a class="next" href="https://www.timestamps.top/zh/posts/how-people-use-claude-for-support-advice-and-companionship/">
+  <a class="next" href="/zh/posts/how-people-use-claude-for-support-advice-and-companionship/">
     <span class="title">下一页 »</span>
     <br>
     <span>人们如何使用 Claude 来获得支持、建议和陪伴</span>
@@ -456,7 +450,7 @@ if (!doNotTrack) {
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="https://www.timestamps.top/zh/">TimeStamps</a></span>
+    <span>&copy; 2025 <a href="zh/">TimeStamps</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

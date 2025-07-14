@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>seo on TimeStamps</title>
-    <link>https://www.timestamps.top/zh/tags/seo/</link>
+    <link>/zh/tags/seo/</link>
     <description>Recent content in seo on TimeStamps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 03 Jul 2025 11:14:13 +0800</lastBuildDate><atom:link href="https://www.timestamps.top/zh/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jul 2025 11:14:13 +0800</lastBuildDate><atom:link href="/zh/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SEO实战密码</title>
-      <link>https://www.timestamps.top/zh/posts/seo%E5%AE%9E%E6%88%98%E5%AF%86%E7%A0%81/</link>
+      <link>/zh/posts/seo%E5%AE%9E%E6%88%98%E5%AF%86%E7%A0%81/</link>
       <pubDate>Thu, 03 Jul 2025 11:14:13 +0800</pubDate>
       
-      <guid>https://www.timestamps.top/zh/posts/seo%E5%AE%9E%E6%88%98%E5%AF%86%E7%A0%81/</guid>
+      <guid>/zh/posts/seo%E5%AE%9E%E6%88%98%E5%AF%86%E7%A0%81/</guid>
       <description>最近在学seo，正好看到了本书《SEO实战密码》，已经出到第五版了。 下载链接：https://crazykids.tech/archives/653 另外，支持正版，从正规途径购买纸质《SEO实战密码》</description>
     </item>
     
