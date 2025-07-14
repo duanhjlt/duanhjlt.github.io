@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>git on TimeStamps</title>
+    <link>/zh/tags/git/</link>
+    <description>Recent content in git on TimeStamps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 07 May 2025 23:04:09 +0800</lastBuildDate><atom:link href="/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同一个系统上管理多个github账号</title>
+      <link>/zh/posts/githubs-on-the-same-os/</link>
+      <pubDate>Wed, 07 May 2025 23:04:09 +0800</pubDate>
+      
+      <guid>/zh/posts/githubs-on-the-same-os/</guid>
+      <description>如何在同一个系统上使用ssh方式管理多个github账号？</description>
+    </item>
+    
+    <item>
+      <title>Git 仓库迁移</title>
+      <link>/zh/posts/git-mirgration/</link>
+      <pubDate>Sat, 06 Jan 2024 12:20:23 +0800</pubDate>
+      
+      <guid>/zh/posts/git-mirgration/</guid>
+      <description>git 仓库迁移，一般分为两种情况，从仓库 A 迁移到仓库 B 和从本地直接上传到仓库 B。 从仓库 A 迁移到仓库 B 这种方式比较常见，也有很多 web 端直接支持镜像的方式，但批量的迁移还是要使用命令的，如下： $ git clone --bare http://a.com/crazykids.git $ git push --mirror http://b.com/crazykids.git 从本地直接上传到仓库 B 有的时候需要将本地仓库直接全部 push 到仓库 B，比如仓库 A 真的</description>
+    </item>
+    
+    <item>
+      <title>git 分支操作常用命令</title>
+      <link>/zh/posts/git_branch/</link>
+      <pubDate>Thu, 04 Jan 2024 22:35:39 +0800</pubDate>
+      
+      <guid>/zh/posts/git_branch/</guid>
+      <description>查看所有分支 $ git branch -a 查看远程分支 $ git branch -r 查看本地分支所关联的远程分支 $ git branch -vv 重命名本地分支 $ git branch -m old_branch new_branch 删除远程分支 $ git branch -d -r origin/old_branch $ git push origin :old_branch 推送新的分支 $ git push -u origin new_branch 设置关联 $ git branch --set-upstream-to=origin/branch branch</description>
+    </item>
+    
+  </channel>
+</rss>

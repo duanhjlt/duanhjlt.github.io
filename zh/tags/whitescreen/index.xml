@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>whitescreen on TimeStamps</title>
+    <link>/zh/tags/whitescreen/</link>
+    <description>Recent content in whitescreen on TimeStamps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 21 Mar 2025 09:46:23 +0800</lastBuildDate><atom:link href="/zh/tags/whitescreen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>White Screen</title>
+      <link>/zh/posts/whitescreen/</link>
+      <pubDate>Fri, 21 Mar 2025 09:46:23 +0800</pubDate>
+      
+      <guid>/zh/posts/whitescreen/</guid>
+      <description>走进 blackscreen.space，感受白色带来的极致魅力。</description>
+    </item>
+    
+  </channel>
+</rss>
