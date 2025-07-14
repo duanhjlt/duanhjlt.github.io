@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>app on 我的碎碎念</title>
-    <link>/zh/tags/app/</link>
+    <link>https://blog.crazykids.tech/zh/tags/app/</link>
     <description>Recent content in app on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 12 Apr 2025 22:56:21 +0800</lastBuildDate><atom:link href="/zh/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Apr 2025 22:56:21 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memora：专为iOS和macOS设计的离线稍后读应用</title>
-      <link>/zh/posts/memora/</link>
+      <link>https://blog.crazykids.tech/zh/posts/memora/</link>
       <pubDate>Sat, 12 Apr 2025 22:56:21 +0800</pubDate>
       
-      <guid>/zh/posts/memora/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/memora/</guid>
       <description>Memora是一款安全可靠的稍后读应用，支持网页离线保存、iCloud同步和无干扰阅读体验。通过标签分类和智能搜索，轻松管理你的阅读清单。</description>
     </item>
     
     <item>
       <title>饭点儿</title>
-      <link>/zh/posts/fan-dian-er/</link>
+      <link>https://blog.crazykids.tech/zh/posts/fan-dian-er/</link>
       <pubDate>Wed, 26 Mar 2025 14:28:50 +0800</pubDate>
       
-      <guid>/zh/posts/fan-dian-er/</guid>
+      <guid>https://blog.crazykids.tech/zh/posts/fan-dian-er/</guid>
       <description>到饭点儿，轻轻一摇推荐附近的餐馆</description>
     </item>
     
