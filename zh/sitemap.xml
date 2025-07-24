@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.crazykids.tech/zh/tags/ai/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <lastmod>2025-07-24T22:23:39+08:00</lastmod>
   </url><url>
-    <loc>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/zh/posts/manus-context-engeering/</loc>
+    <lastmod>2025-07-24T22:23:39+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <lastmod>2025-07-24T22:23:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,11 +21,8 @@
                 href="https://blog.crazykids.tech/zh/tags/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
-  </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <lastmod>2025-07-24T22:23:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,7 +35,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/</loc>
-    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <lastmod>2025-07-24T22:23:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,6 +46,12 @@
                 hreflang="zh"
                 href="https://blog.crazykids.tech/zh/"
                 />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/devutils/</loc>
     <lastmod>2025-07-24T17:48:38+08:00</lastmod>

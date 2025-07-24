@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石 | 我的碎碎念</title>
+<meta name="keywords" content="blog">
+<meta name="description" content="探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。">
+<meta name="author" content="duanhongjin">
+<link rel="canonical" href="https://blog.crazykids.tech/zh/posts/manus-context-engeering/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.678b5c47efa744d2e0dd0d61101075e6aecdc9a0631e7ad8538f4ec0cca79273.css" integrity="sha256-Z4tcR&#43;&#43;nRNLg3Q1hEBB15q7NyaBjHnrYU49OwMynknM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://blog.crazykids.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.crazykids.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.crazykids.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.crazykids.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.crazykids.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://blog.crazykids.tech/zh/posts/manus-context-engeering/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6070701987024874"
+    crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script><meta property="og:title" content="Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石" />
+<meta property="og:description" content="探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.crazykids.tech/zh/posts/manus-context-engeering/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-07-24T22:23:39+08:00" />
+<meta property="article:modified_time" content="2025-07-24T22:23:39+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石"/>
+<meta name="twitter:description" content="探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章",
+      "item": "https://blog.crazykids.tech/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石",
+      "item": "https://blog.crazykids.tech/zh/posts/manus-context-engeering/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石",
+  "name": "Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石",
+  "description": "探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。",
+  "keywords": [
+    "blog"
+  ],
+  "articleBody": " AI代理的上下文工程：构建Manus的经验教训\n在人工智能飞速发展的今天，我们拥有了像GPT-4这样前所未有强大的通用大模型。然而，如何将这些“聪明的引擎”转化为可靠、高效且经济的AI智能体（Agent）产品，却是一门充满挑战的全新工程科学。近期，AI智能体项目Manus的开发者分享了他们宝贵的实战经验，其核心论点振聋发聩：对于构建真正可用的AI智能体，精巧的上下文工程（Context Engineering）远比模型微调更具决定性。\n这篇文章深入探讨了Manus团队从“随机研究生下降”（Staggering Graduate Student Descent）——一个描述其手动、反复试验过程的戏谑之词——中提炼出的六大核心原则。这不仅是对“提示词工程”的升维，更是为所有AI应用开发者提供了一张宝贵的“战壕地图”。\n核心转向：为何押注上下文工程？ 在项目之初，Manus团队面临一个关键抉择：是耗费数周微调一个专用模型，还是基于前沿模型的上下文学习能力进行快速迭代？他们选择了后者。战略考量很明确：上下文工程能将产品迭代周期从数周缩短至数小时，更重要的是，它能让产品与日新月异的底层模型解耦。这使得AI产品能像“水涨船高的船”，充分享受模型进步的红利，而非被特定技术版本锁死的“海床上的柱子”。\n这套思想体系，将我们从对单个提示词的优化，引导向对智能体与世界交互的完整信息流（Context Flow） 的设计与管理。\n原则一：围绕KV缓存设计——性能与成本的生命线 在生产环境中，KV-cache命中率是AI智能体最关键的单一指标，直接关系到延迟和成本。由于智能体任务通常是“高输入、低输出”（例如，100个token的上下文输入，只为了生成一个几token的工具调用指令），有效利用KV缓存能带来高达10倍的成本效益。\n实践要点： 保持前缀稳定：系统提示中避免使用时间戳等变量。 上下文只追加：确保历史记录不可变，并保证JSON等数据结构序列化的顺序确定性，防止因微小差异导致缓存失效。 明确缓存断点：在必要时手动标记缓存边界。 评论：这一原则将高层应用逻辑与底层推理框架特性深度耦合，是算法构思与计算经济学完美结合的典范，提醒开发者“优雅的理论”必须脚踏“成本的实地”。\n原则二：遮蔽而非移除——“外科手术式”的工具管理 当智能体拥有的工具过多时，它会变得“选择困难”，容易犯错。许多人想到的方案是按需动态加载工具，但这会频繁破坏KV缓存，反而让模型更加困惑。\nManus的解决方案更为精妙：使用状态机配合Logits Masking。系统并不从上下文中移除工具定义，而是在解码的瞬间，根据当前任务状态，“外科手术式”地掩蔽掉不可用工具的token概率，从而在不破坏上下文历史的前提下，引导模型做出正确选择。\n评论：这是一种“无损”的上下文管理策略，它展示了从“物理修改上下文”到“逻辑引导生成”的思维跃迁，是实现复杂任务流中智能体稳定性的关键。\n原则三：文件系统即终极上下文——赋予智能体无限记忆 即便是128K甚至更长的上下文窗口，在面对真实世界的复杂任务时也常常捉襟见肘，并且存在成本高、性能下降（“迷失在中间”）等问题。简单的截断则意味着不可逆的信息丢失。\nManus将文件系统视为一个无限容量、天然持久化的外部记忆。智能体被训练成能够主动、按需地读写文件，从而将长期状态“外包”出去。例如，网页内容可以被移除，但只要保留URL和本地文件路径，智能体就能在需要时恢复信息。\n评论：这不仅是对LLM核心局限性的优雅回应，更是一种深刻的“认知外包”哲学。它超越了被动式的RAG（检索增强生成），让智能体学会了主动记忆管理，这与人类使用笔记、草稿等外部工具的认知方式高度一致。\n原则四：通过复述操控注意力——对抗目标的遗忘 在执行包含数十个步骤的漫长任务时，智能体很容易偏离最初的战略目标。Manus的智能体通过一个简单的行为来对抗这种“认知漂移”：持续维护并重写一个名为 todo.md 的任务清单文件。\n这种“复述”（Recitation）行为，不断将全局计划推到上下文窗口的末尾，使其始终处于模型注意力的“近期范围”内。这是一种极其聪明的、用自然语言引导模型注意力、强化任务目标的“认知脚手架”。\n评论：这个看似简单的技巧，是一种优雅的“注意力操控术”。它揭示了通过塑造上下文内容，可以有效弥补当前Transformer架构在长程依赖上的不足，是一种四两拨千斤的工程智慧。\n原则五：拥抱失败——将错误转化为学习的阶梯 开发者的本能是隐藏和清理智能体的错误尝试。然而，这恰恰剥夺了模型最宝贵的学习机会。Manus的经验是：将失败的动作、错误信息和堆栈跟踪完整地保留在上下文中。\n当模型看到一次失败的记录，这次交互就成了一个强烈的负样本信号。整个上下文历史因此变成了一个针对当前任务的、动态的“微型在线学习数据集”，模型在下一次决策时会隐式地更新其信念，从而避免重蹈覆覆。\n评论：这一原则标志着从传统软件工程“错误规避”到机器学习“从错中学”的范式转变。作者提出的**“错误恢复能力是真正代理行为的试金石”**，是一个极其深刻的洞见，它为我们衡量智能系统的鲁棒性和“真智能”提供了新的维度。\n原则六：打破模式——警惕少样本学习的陷阱 大语言模型是卓越的模仿者。如果上下文中充满了高度重复的成功示例（Few-shot Examples），智能体在处理相似任务时就会陷入僵化的行为模式，丧失灵活性。\nManus的对策是在行动和观察记录中引入受控的、结构化的多样性——例如，使用不同的措辞模板、在格式上加入微小的噪音等。这种受控的随机性有助于打破模式，调整模型的注意力，防止其对上下文中的特定模式产生“路径依赖”。\n评论：这提醒我们，上下文不仅要提供信息，还要注意其“信息熵”。一个过于单一、纯净的上下文反而会使智能体变得脆弱。构建一个既有指导性又具多样性的上下文，是通往鲁棒AI的关键。\n结论：智能体的未来，一次构建一个上下文 《构建Manus的经验教训》为我们描绘了一幅清晰的蓝图：在通往通用人工智能的道路上，强大的“引擎”（底层模型）必须与精巧的“传动系统”（上下文工程）相匹配。它所揭示的，是一种融合了认知科学洞察与底层工程现实的全新方法论。\n尽管这门“艺术”目前还依赖于大量的“手动”探索，但它无疑指明了方向。未来的挑战在于如何将这些宝贵的直觉系统化、自动化，并建立能够有效评估智能体鲁棒性与适应性的全新范式。毫无疑问，智能体的未来，将由一个个精心设计的上下文所构建——而我们，正处在这场伟大工程的开端。\n",
+  "wordCount" : "2649",
+  "inLanguage": "zh",
+  "datePublished": "2025-07-24T22:23:39+08:00",
+  "dateModified": "2025-07-24T22:23:39+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "duanhongjin"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.crazykids.tech/zh/posts/manus-context-engeering/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "我的碎碎念",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.crazykids.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.crazykids.tech/zh/" accesskey="h" title="我的碎碎念 (Alt + H)">我的碎碎念</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://blog.crazykids.tech/en/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.crazykids.tech/zh/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.crazykids.tech/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.crazykids.tech/zh/categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.memora.top" title="Memora">
+                    <span>Memora</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://twittervideoindir.com" title="TwitterXVideo">
+                    <span>TwitterXVideo</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.crazykids.tech/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.crazykids.tech/zh/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.crazykids.tech/zh/">主页</a>&nbsp;»&nbsp;<a href="https://blog.crazykids.tech/zh/posts/">文章</a></div>
+    <h1 class="post-title">
+      Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石
+    </h1>
+    <div class="post-description">
+      探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。
+    </div>
+    <div class="post-meta"><span title='2025-07-24 22:23:39 +0800 CST'>2025-07-24</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;duanhongjin&nbsp;|&nbsp;<a href="https://github.com/duanhjlt/blog/tree/master/content/posts/manus-context-engeering/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">目录</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#%e6%a0%b8%e5%bf%83%e8%bd%ac%e5%90%91%e4%b8%ba%e4%bd%95%e6%8a%bc%e6%b3%a8%e4%b8%8a%e4%b8%8b%e6%96%87%e5%b7%a5%e7%a8%8b" aria-label="核心转向：为何押注上下文工程？"><strong>核心转向：为何押注上下文工程？</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e4%b8%80%e5%9b%b4%e7%bb%95kv%e7%bc%93%e5%ad%98%e8%ae%be%e8%ae%a1%e6%80%a7%e8%83%bd%e4%b8%8e%e6%88%90%e6%9c%ac%e7%9a%84%e7%94%9f%e5%91%bd%e7%ba%bf" aria-label="原则一：围绕KV缓存设计——性能与成本的生命线"><strong>原则一：围绕KV缓存设计——性能与成本的生命线</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e4%ba%8c%e9%81%ae%e8%94%bd%e8%80%8c%e9%9d%9e%e7%a7%bb%e9%99%a4%e5%a4%96%e7%a7%91%e6%89%8b%e6%9c%af%e5%bc%8f%e7%9a%84%e5%b7%a5%e5%85%b7%e7%ae%a1%e7%90%86" aria-label="原则二：遮蔽而非移除——“外科手术式”的工具管理"><strong>原则二：遮蔽而非移除——“外科手术式”的工具管理</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e4%b8%89%e6%96%87%e4%bb%b6%e7%b3%bb%e7%bb%9f%e5%8d%b3%e7%bb%88%e6%9e%81%e4%b8%8a%e4%b8%8b%e6%96%87%e8%b5%8b%e4%ba%88%e6%99%ba%e8%83%bd%e4%bd%93%e6%97%a0%e9%99%90%e8%ae%b0%e5%bf%86" aria-label="原则三：文件系统即终极上下文——赋予智能体无限记忆"><strong>原则三：文件系统即终极上下文——赋予智能体无限记忆</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e5%9b%9b%e9%80%9a%e8%bf%87%e5%a4%8d%e8%bf%b0%e6%93%8d%e6%8e%a7%e6%b3%a8%e6%84%8f%e5%8a%9b%e5%af%b9%e6%8a%97%e7%9b%ae%e6%a0%87%e7%9a%84%e9%81%97%e5%bf%98" aria-label="原则四：通过复述操控注意力——对抗目标的遗忘"><strong>原则四：通过复述操控注意力——对抗目标的遗忘</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e4%ba%94%e6%8b%a5%e6%8a%b1%e5%a4%b1%e8%b4%a5%e5%b0%86%e9%94%99%e8%af%af%e8%bd%ac%e5%8c%96%e4%b8%ba%e5%ad%a6%e4%b9%a0%e7%9a%84%e9%98%b6%e6%a2%af" aria-label="原则五：拥抱失败——将错误转化为学习的阶梯"><strong>原则五：拥抱失败——将错误转化为学习的阶梯</strong></a></li>
+                    <li>
+                        <a href="#%e5%8e%9f%e5%88%99%e5%85%ad%e6%89%93%e7%a0%b4%e6%a8%a1%e5%bc%8f%e8%ad%a6%e6%83%95%e5%b0%91%e6%a0%b7%e6%9c%ac%e5%ad%a6%e4%b9%a0%e7%9a%84%e9%99%b7%e9%98%b1" aria-label="原则六：打破模式——警惕少样本学习的陷阱"><strong>原则六：打破模式——警惕少样本学习的陷阱</strong></a></li>
+                    <li>
+                        <a href="#%e7%bb%93%e8%ae%ba%e6%99%ba%e8%83%bd%e4%bd%93%e7%9a%84%e6%9c%aa%e6%9d%a5%e4%b8%80%e6%ac%a1%e6%9e%84%e5%bb%ba%e4%b8%80%e4%b8%aa%e4%b8%8a%e4%b8%8b%e6%96%87" aria-label="结论：智能体的未来，一次构建一个上下文"><strong>结论：智能体的未来，一次构建一个上下文</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><blockquote>
+<p><strong><a href="https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus">AI代理的上下文工程：构建Manus的经验教训</a></strong></p>
+</blockquote>
+<p>在人工智能飞速发展的今天，我们拥有了像GPT-4这样前所未有强大的通用大模型。然而，如何将这些“聪明的引擎”转化为可靠、高效且经济的AI智能体（Agent）产品，却是一门充满挑战的全新工程科学。近期，AI智能体项目Manus的开发者分享了他们宝贵的实战经验，其核心论点振聋发聩：对于构建真正可用的AI智能体，<strong>精巧的上下文工程（Context Engineering）远比模型微调更具决定性</strong>。</p>
+<p>这篇文章深入探讨了Manus团队从“随机研究生下降”（Staggering Graduate Student Descent）——一个描述其手动、反复试验过程的戏谑之词——中提炼出的六大核心原则。这不仅是对“提示词工程”的升维，更是为所有AI应用开发者提供了一张宝贵的“战壕地图”。</p>
+<h3 id="核心转向为何押注上下文工程"><strong>核心转向：为何押注上下文工程？</strong><a hidden class="anchor" aria-hidden="true" href="#核心转向为何押注上下文工程">#</a></h3>
+<p>在项目之初，Manus团队面临一个关键抉择：是耗费数周微调一个专用模型，还是基于前沿模型的上下文学习能力进行快速迭代？他们选择了后者。战略考量很明确：上下文工程能将产品迭代周期从数周缩短至数小时，更重要的是，它能让产品与日新月异的底层模型解耦。这使得AI产品能像“水涨船高的船”，充分享受模型进步的红利，而非被特定技术版本锁死的“海床上的柱子”。</p>
+<p>这套思想体系，将我们从对单个提示词的优化，引导向对智能体与世界交互的<strong>完整信息流（Context Flow）</strong> 的设计与管理。</p>
+<h3 id="原则一围绕kv缓存设计性能与成本的生命线"><strong>原则一：围绕KV缓存设计——性能与成本的生命线</strong><a hidden class="anchor" aria-hidden="true" href="#原则一围绕kv缓存设计性能与成本的生命线">#</a></h3>
+<p>在生产环境中，<strong><code>KV-cache</code>命中率是AI智能体最关键的单一指标</strong>，直接关系到延迟和成本。由于智能体任务通常是“高输入、低输出”（例如，100个token的上下文输入，只为了生成一个几token的工具调用指令），有效利用KV缓存能带来高达10倍的成本效益。</p>
+<ul>
+<li><strong>实践要点</strong>：
+<ul>
+<li><strong>保持前缀稳定</strong>：系统提示中避免使用时间戳等变量。</li>
+<li><strong>上下文只追加</strong>：确保历史记录不可变，并保证JSON等数据结构序列化的顺序确定性，防止因微小差异导致缓存失效。</li>
+<li><strong>明确缓存断点</strong>：在必要时手动标记缓存边界。</li>
+</ul>
+</li>
+</ul>
+<p><strong>评论</strong>：这一原则将高层应用逻辑与底层推理框架特性深度耦合，是算法构思与计算经济学完美结合的典范，提醒开发者“优雅的理论”必须脚踏“成本的实地”。</p>
+<h3 id="原则二遮蔽而非移除外科手术式的工具管理"><strong>原则二：遮蔽而非移除——“外科手术式”的工具管理</strong><a hidden class="anchor" aria-hidden="true" href="#原则二遮蔽而非移除外科手术式的工具管理">#</a></h3>
+<p>当智能体拥有的工具过多时，它会变得“选择困难”，容易犯错。许多人想到的方案是按需动态加载工具，但这会频繁破坏KV缓存，反而让模型更加困惑。</p>
+<p>Manus的解决方案更为精妙：<strong>使用状态机配合Logits Masking</strong>。系统并不从上下文中移除工具定义，而是在解码的瞬间，根据当前任务状态，“外科手术式”地掩蔽掉不可用工具的token概率，从而在不破坏上下文历史的前提下，引导模型做出正确选择。</p>
+<p><strong>评论</strong>：这是一种“无损”的上下文管理策略，它展示了从“物理修改上下文”到“逻辑引导生成”的思维跃迁，是实现复杂任务流中智能体稳定性的关键。</p>
+<h3 id="原则三文件系统即终极上下文赋予智能体无限记忆"><strong>原则三：文件系统即终极上下文——赋予智能体无限记忆</strong><a hidden class="anchor" aria-hidden="true" href="#原则三文件系统即终极上下文赋予智能体无限记忆">#</a></h3>
+<p>即便是128K甚至更长的上下文窗口，在面对真实世界的复杂任务时也常常捉襟见肘，并且存在成本高、性能下降（“迷失在中间”）等问题。简单的截断则意味着不可逆的信息丢失。</p>
+<p>Manus将<strong>文件系统视为一个无限容量、天然持久化的外部记忆</strong>。智能体被训练成能够主动、按需地读写文件，从而将长期状态“外包”出去。例如，网页内容可以被移除，但只要保留URL和本地文件路径，智能体就能在需要时恢复信息。</p>
+<p><strong>评论</strong>：这不仅是对LLM核心局限性的优雅回应，更是一种深刻的“认知外包”哲学。它超越了被动式的RAG（检索增强生成），让智能体学会了<strong>主动记忆管理</strong>，这与人类使用笔记、草稿等外部工具的认知方式高度一致。</p>
+<h3 id="原则四通过复述操控注意力对抗目标的遗忘"><strong>原则四：通过复述操控注意力——对抗目标的遗忘</strong><a hidden class="anchor" aria-hidden="true" href="#原则四通过复述操控注意力对抗目标的遗忘">#</a></h3>
+<p>在执行包含数十个步骤的漫长任务时，智能体很容易偏离最初的战略目标。Manus的智能体通过一个简单的行为来对抗这种“认知漂移”：<strong>持续维护并重写一个名为 <code>todo.md</code> 的任务清单文件</strong>。</p>
+<p>这种“复述”（Recitation）行为，不断将全局计划推到上下文窗口的末尾，使其始终处于模型注意力的“近期范围”内。这是一种极其聪明的、用自然语言引导模型注意力、强化任务目标的“认知脚手架”。</p>
+<p><strong>评论</strong>：这个看似简单的技巧，是一种优雅的“注意力操控术”。它揭示了通过塑造上下文内容，可以有效弥补当前Transformer架构在长程依赖上的不足，是一种四两拨千斤的工程智慧。</p>
+<h3 id="原则五拥抱失败将错误转化为学习的阶梯"><strong>原则五：拥抱失败——将错误转化为学习的阶梯</strong><a hidden class="anchor" aria-hidden="true" href="#原则五拥抱失败将错误转化为学习的阶梯">#</a></h3>
+<p>开发者的本能是隐藏和清理智能体的错误尝试。然而，这恰恰剥夺了模型最宝贵的学习机会。Manus的经验是：<strong>将失败的动作、错误信息和堆栈跟踪完整地保留在上下文中</strong>。</p>
+<p>当模型看到一次失败的记录，这次交互就成了一个强烈的负样本信号。整个上下文历史因此变成了一个针对当前任务的、动态的“微型在线学习数据集”，模型在下一次决策时会隐式地更新其信念，从而避免重蹈覆覆。</p>
+<p><strong>评论</strong>：这一原则标志着从传统软件工程“错误规避”到机器学习“从错中学”的范式转变。作者提出的**“错误恢复能力是真正代理行为的试金石”**，是一个极其深刻的洞见，它为我们衡量智能系统的鲁棒性和“真智能”提供了新的维度。</p>
+<h3 id="原则六打破模式警惕少样本学习的陷阱"><strong>原则六：打破模式——警惕少样本学习的陷阱</strong><a hidden class="anchor" aria-hidden="true" href="#原则六打破模式警惕少样本学习的陷阱">#</a></h3>
+<p>大语言模型是卓越的模仿者。如果上下文中充满了高度重复的成功示例（Few-shot Examples），智能体在处理相似任务时就会陷入僵化的行为模式，丧失灵活性。</p>
+<p>Manus的对策是在行动和观察记录中<strong>引入受控的、结构化的多样性</strong>——例如，使用不同的措辞模板、在格式上加入微小的噪音等。这种受控的随机性有助于打破模式，调整模型的注意力，防止其对上下文中的特定模式产生“路径依赖”。</p>
+<p><strong>评论</strong>：这提醒我们，上下文不仅要提供信息，还要注意其“信息熵”。一个过于单一、纯净的上下文反而会使智能体变得脆弱。构建一个既有指导性又具多样性的上下文，是通往鲁棒AI的关键。</p>
+<h3 id="结论智能体的未来一次构建一个上下文"><strong>结论：智能体的未来，一次构建一个上下文</strong><a hidden class="anchor" aria-hidden="true" href="#结论智能体的未来一次构建一个上下文">#</a></h3>
+<p>《构建Manus的经验教训》为我们描绘了一幅清晰的蓝图：在通往通用人工智能的道路上，强大的“引擎”（底层模型）必须与精巧的“传动系统”（上下文工程）相匹配。它所揭示的，是一种融合了认知科学洞察与底层工程现实的全新方法论。</p>
+<p>尽管这门“艺术”目前还依赖于大量的“手动”探索，但它无疑指明了方向。未来的挑战在于如何将这些宝贵的直觉系统化、自动化，并建立能够有效评估智能体鲁棒性与适应性的全新范式。毫无疑问，智能体的未来，将由一个个精心设计的上下文所构建——而我们，正处在这场伟大工程的开端。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.crazykids.tech/zh/tags/ai/">AI</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Context Engineering：为 Prompt 注入工程纪律</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://blog.crazykids.tech/zh/">我的碎碎念</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><div style="margin-top: 1em; margin-bottom: 1em; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <div>
+        <h4 style="margin-bottom: 0.5em; color: #666;">关于本站</h4>
+        <div style="display: flex; align-items: center; gap: 0.3em; font-size: 14px;">
+            <a href="/zh/privacy">隐私政策</a>
+            <span style="margin: 0 0.3em;">|</span>
+            <a href="/zh/about">联系我们</a>
+        </div>
+    </div>
+    <div style="margin-top: 1em;">
+        <h4 style="margin-bottom: 0.5em; color: #666;">友情链接</h4>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.3em; font-size: 14px;">
+            <a href="https://memora.top" target="_blank" rel="noopener noreferrer">Memora</a>
+            <span style="margin: 0 0.3em;">|</span>
+            <a href="https://twittervideoindir.com" target="_blank" rel="noopener noreferrer">TwitterXVideo</a>
+            <span style="margin: 0 0.3em;">|</span>
+            <a href="https://blackscreennow.space" target="_blank" rel="noopener noreferrer">Black Screen Tool</a>
+            <span style="margin: 0 0.3em;">|</span>
+            <a href="https://crazykids.tech" target="_blank" rel="noopener noreferrer">乘风客的分享</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

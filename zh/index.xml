@@ -6,7 +6,16 @@
     <description>Recent content on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 24 Jul 2025 22:00:54 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jul 2025 22:23:39 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石</title>
+      <link>https://blog.crazykids.tech/zh/posts/manus-context-engeering/</link>
+      <pubDate>Thu, 24 Jul 2025 22:23:39 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/manus-context-engeering/</guid>
+      <description>探索构建高效AI智能体（Agent）的核心秘诀：上下文工程。本文深入解读Manus团队的六大实战经验，从优化KV缓存、利用文件系统作为外部记忆，到通过保留错误进行在线学习。了解如何超越传统提示词工程，打造更快速、更鲁棒、更经济的AI应用。</description>
+    </item>
+    
     <item>
       <title>Context Engineering：为 Prompt 注入工程纪律</title>
       <link>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</link>
