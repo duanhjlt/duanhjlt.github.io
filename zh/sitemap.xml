@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.crazykids.tech/zh/tags/ai/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/</loc>
+    <lastmod>2025-07-24T22:00:54+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/devutils/</loc>
     <lastmod>2025-07-24T17:48:38+08:00</lastmod>
     <xhtml:link
@@ -13,19 +61,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://blog.crazykids.tech/zh/tags/devutils/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-07-24T17:48:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/twitterxvideo/</loc>
@@ -43,32 +78,6 @@
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/beyond-download-twitter-video/</loc>
     <lastmod>2025-07-24T17:48:38+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-07-24T17:48:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/</loc>
-    <lastmod>2025-07-24T17:48:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/download-translate-report-twitter-videos/</loc>
     <lastmod>2025-07-24T16:11:52+08:00</lastmod>
@@ -120,9 +129,6 @@
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/what-is-timestamp/</loc>
     <lastmod>2025-06-30T17:17:13+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2025-06-30T16:46:38+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/how-people-use-claude-for-support-advice-and-companionship/</loc>
     <lastmod>2025-06-30T16:46:38+08:00</lastmod>

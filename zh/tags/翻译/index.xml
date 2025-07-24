@@ -6,7 +6,16 @@
     <description>Recent content in 翻译 on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Jun 2025 16:46:38 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jul 2025 22:00:54 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/%E7%BF%BB%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Context Engineering：为 Prompt 注入工程纪律</title>
+      <link>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</link>
+      <pubDate>Thu, 24 Jul 2025 22:00:54 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/context-engineering-bringing-engineering/</guid>
+      <description>一篇关于 AI Prompt 信息架构的实用指南 原文：Context Engineering: Bringing Engineering Discipline to Prompts TL;DR: “Context Engineering”（上下文工程）是指为 AI（如 LLM）提供成功完成任务所需的所有信息和工具——而不仅仅是一段措辞巧妙的 prompt。它是 “Prompt Engineering” 的演进，体现了一种更</description>
+    </item>
+    
     <item>
       <title>人们如何使用 Claude 来获得支持、建议和陪伴</title>
       <link>https://blog.crazykids.tech/zh/posts/how-people-use-claude-for-support-advice-and-companionship/</link>
