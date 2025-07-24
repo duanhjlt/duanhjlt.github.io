@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TwitterXVideo on 我的碎碎念</title>
+    <link>https://blog.crazykids.tech/zh/tags/twitterxvideo/</link>
+    <description>Recent content in TwitterXVideo on 我的碎碎念</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 24 Jul 2025 16:11:52 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/tags/twitterxvideo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>终极指南：如何用 TwitterXVideo 一键下载、翻译与转发 Twitter/X 视频和推文内容</title>
+      <link>https://blog.crazykids.tech/zh/posts/download-translate-report-twitter-videos/</link>
+      <pubDate>Thu, 24 Jul 2025 16:11:52 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/download-translate-report-twitter-videos/</guid>
+      <description>TwitterXVideo 是一款免费的一体化工具，可用于下载 Twitter/X 视频、翻译推文内容、编辑文本，并实现一键转发——无需注册，快速、简单且功能强大。</description>
+    </item>
+    
+    <item>
+      <title>TwitterXVideo</title>
+      <link>https://blog.crazykids.tech/zh/posts/download-twitter-video/</link>
+      <pubDate>Sat, 05 Jul 2025 22:11:49 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/download-twitter-video/</guid>
+      <description>TwitterXVideo 是一个在线网页应用，可以直接将Twitter视频和所有内容下载到您的电脑。它免费使用，无需注册。Twitter视频和Twitter GIFs嵌入在推文中，因此要在线下载Twitter视频，您需要复制推文URL/链接，并将其粘贴到上面的文本框中。我们的Twitter X下载服务将提取</description>
+    </item>
+    
+  </channel>
+</rss>
