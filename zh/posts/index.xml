@@ -6,7 +6,25 @@
     <description>Recent content in 文章 on 我的碎碎念</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 24 Jul 2025 22:23:39 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Jul 2025 23:04:05 +0800</lastBuildDate><atom:link href="https://blog.crazykids.tech/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深度剖析：在Twitter/X内容工具的红海中，TwitterXVideo何以重塑工作流？</title>
+      <link>https://blog.crazykids.tech/zh/posts/how-twitterxvideo-redefines-workflows/</link>
+      <pubDate>Fri, 25 Jul 2025 23:04:05 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/how-twitterxvideo-redefines-workflows/</guid>
+      <description>本文深度对比Twitter下载工具。普通工具仅能下载，而TwitterXVideo提供批量下载、无广告体验，并集编辑、翻译、API自动转发功能于一体。它不再是简单工具，而是为内容创作者与社媒经理设计的高效内容工作站，彻底重塑工作流程。</description>
+    </item>
+    
+    <item>
+      <title>关于OpenAI的一些思考</title>
+      <link>https://blog.crazykids.tech/zh/posts/openai-reflections/</link>
+      <pubDate>Fri, 25 Jul 2025 22:30:05 +0800</pubDate>
+      
+      <guid>https://blog.crazykids.tech/zh/posts/openai-reflections/</guid>
+      <description>一位前OpenAI员工，也是前Segment创始人，在他离职后分享了对这家全球顶尖AI实验室的深度观察。文章深入探讨了OpenAI在快速扩张下的独特文化：崇尚行动、自下而上、任人唯贤，以及完全在Slack上运作的工作模式。作者更以第一人称视角，详细讲述了他在短短7周内，与团队一同冲刺开发并成功发布AI代码工具Codex的珍贵幕后经历。这不仅是一份关于AGI、LLM与未来科技浪潮的真实见闻，更是对OpenAI内部运作、工程挑战与宏大愿景的第一手解密。</description>
+    </item>
+    
     <item>
       <title>Manus Context Engeering上下文工程：驯服AI智能体的实践艺术与未来基石</title>
       <link>https://blog.crazykids.tech/zh/posts/manus-context-engeering/</link>
