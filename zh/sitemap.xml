@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.crazykids.tech/zh/tags/backlink/</loc>
+    <lastmod>2025-07-28T14:13:44+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/backlink_profile/</loc>
+    <lastmod>2025-07-28T14:13:44+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/tags/</loc>
+    <lastmod>2025-07-28T14:13:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/tags/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/posts/</loc>
+    <lastmod>2025-07-28T14:13:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/zh/</loc>
+    <lastmod>2025-07-28T14:13:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/devutils/</loc>
     <lastmod>2025-07-25T23:04:05+08:00</lastmod>
     <xhtml:link
@@ -13,19 +58,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://blog.crazykids.tech/zh/tags/devutils/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/tags/</loc>
-    <lastmod>2025-07-25T23:04:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/tags/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/tags/twitterxvideo/</loc>
@@ -43,32 +75,6 @@
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/how-twitterxvideo-redefines-workflows/</loc>
     <lastmod>2025-07-25T23:04:05+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/posts/</loc>
-    <lastmod>2025-07-25T23:04:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/zh/</loc>
-    <lastmod>2025-07-25T23:04:05+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
   </url><url>
     <loc>https://blog.crazykids.tech/zh/posts/openai-reflections/</loc>
     <lastmod>2025-07-25T22:30:05+08:00</lastmod>
