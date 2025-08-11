@@ -2,6 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.crazykids.tech/en/posts/brat-generator/</loc>
+    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/</loc>
+    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/</loc>
+    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/en/tags/devutils/</loc>
     <lastmod>2025-07-10T23:12:09+08:00</lastmod>
     <xhtml:link
@@ -13,19 +42,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/devutils/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/</loc>
@@ -55,19 +71,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/twitterxvideo/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/twitter-x-video/</loc>
