@@ -2,37 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.crazykids.tech/en/posts/brat-generator/</loc>
-    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/en/tags/black-screen/</loc>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
   </url><url>
-    <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/posts/"
-                />
-  </url><url>
-    <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.crazykids.tech/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.crazykids.tech/en/"
-                />
+    <loc>https://blog.crazykids.tech/en/posts/black-screen-2/</loc>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/devutils/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -44,8 +21,21 @@
                 href="https://blog.crazykids.tech/en/tags/devutils/"
                 />
   </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/</loc>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/posts/"
+                />
+  </url><url>
     <loc>https://blog.crazykids.tech/en/tags/</loc>
-    <lastmod>2025-07-10T23:12:09+08:00</lastmod>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -56,6 +46,22 @@
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/tags/"
                 />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/</loc>
+    <lastmod>2025-08-20T10:00:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.crazykids.tech/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.crazykids.tech/en/"
+                />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/brat-generator/</loc>
+    <lastmod>2025-08-11T22:17:31+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/en/posts/twitter-video-formats/</loc>
     <lastmod>2025-07-10T23:12:09+08:00</lastmod>
