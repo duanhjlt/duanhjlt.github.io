@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.crazykids.tech/en/tags/devutils/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+    <lastmod>2025-09-26T21:26:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -15,11 +15,8 @@
                 href="https://blog.crazykids.tech/en/tags/devutils/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/en/posts/string-art-generator/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
-  </url><url>
     <loc>https://blog.crazykids.tech/en/posts/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+    <lastmod>2025-09-26T21:26:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -31,11 +28,11 @@
                 href="https://blog.crazykids.tech/en/posts/"
                 />
   </url><url>
-    <loc>https://blog.crazykids.tech/en/tags/string-art-generator/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+    <loc>https://blog.crazykids.tech/en/posts/retro-image-prompt/</loc>
+    <lastmod>2025-09-26T21:26:51+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+    <lastmod>2025-09-26T21:26:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -48,7 +45,7 @@
                 />
   </url><url>
     <loc>https://blog.crazykids.tech/en/</loc>
-    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+    <lastmod>2025-09-26T21:26:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -59,6 +56,12 @@
                 hreflang="en"
                 href="https://blog.crazykids.tech/en/"
                 />
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/posts/string-art-generator/</loc>
+    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.crazykids.tech/en/tags/string-art-generator/</loc>
+    <lastmod>2025-08-22T22:26:48+08:00</lastmod>
   </url><url>
     <loc>https://blog.crazykids.tech/en/tags/black-screen/</loc>
     <lastmod>2025-08-20T10:00:53+08:00</lastmod>
